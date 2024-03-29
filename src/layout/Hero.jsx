@@ -2,7 +2,7 @@ export const Hero = () => {
   return (
     <div className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
       <div className="space-y-6 lg:col-start-1 lg:col-end-3">
-        <h2 className="font-bold text-3xl md:text-6xl">Hi, I'm Brandon 👋</h2>
+        <h2 className="text-3xl font-bold md:text-6xl">Hi, I'm Brandon 👋</h2>
         <p className="text-balance">
           I'm a full stack developer (React.js & Node.js) with a focus on
           creating (and occasionally designing) exceptional digital experiences
@@ -12,7 +12,7 @@ export const Hero = () => {
         </p>
 
         <div>
-          <div className="flex gap-2 items-center">
+          <div className="flex items-center gap-2">
             <img
               className="size-5"
               src="/icons/location.svg"
@@ -20,16 +20,28 @@ export const Hero = () => {
             />
             <p>San José, Costa Rica</p>
           </div>
-          <div className="flex gap-2 items-center">
-            <div className="size-4 bg-green-500 rounded-full"></div>
+          <div className="flex items-center gap-2">
+            <div className="bg-green-500 rounded-full size-4"></div>
             <p>Available for new projects</p>
           </div>
         </div>
 
-        <div className="flex gap-2 items-center">
-          <img src="/icons/github.svg" alt="GitHub" />
-          <img src="/icons/twitter.svg" alt="Twitter" />
-          <img src="/icons/figma.svg" alt="Figma" />
+        <div className="flex items-center gap-2">
+          <img
+            className="duration-200 cursor-pointer hover:scale-125"
+            src="/icons/github.svg"
+            alt="GitHub"
+          />
+          <img
+            className="duration-200 cursor-pointer hover:scale-125"
+            src="/icons/twitter.svg"
+            alt="Twitter"
+          />
+          <img
+            className="duration-200 cursor-pointer hover:scale-125"
+            src="/icons/figma.svg"
+            alt="Figma"
+          />
         </div>
       </div>
 

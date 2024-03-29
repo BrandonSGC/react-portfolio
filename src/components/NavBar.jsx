@@ -19,8 +19,8 @@ export const NavBar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center py-2 ">
-      <h1 className="font-bold text-2xl">{"<BGC />"}</h1>
+    <div className="flex justify-between items-center py-4">
+      <h1 className="font-bold text-3xl">{"<BGC />"}</h1>
 
       <nav
         className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 animate-fade-left animate-once ${
