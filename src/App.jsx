@@ -1,4 +1,4 @@
-import { Heading, NavBar, SkillsList } from "./components/";
+import { ExperienceCard, Heading, NavBar, SkillsList } from "./components/";
 import { AboutMe, Hero } from "./layout/";
 
 import { skills } from "./data/skills";
@@ -6,20 +6,20 @@ import { skills } from "./data/skills";
 function App() {
   return (
     <>
-      <header className="fixed bg-slate-100 dark:bg-slate-950 w-full">
+      <header className="fixed w-full bg-slate-100 dark:bg-slate-950">
         <div className="mycontainer">
           <NavBar />
         </div>
       </header>
 
-      <section className="pb-20 pt-20 md:pt-44">
-        <div className="mycontainer flex items-center">
+      <section className="pt-20 pb-20 md:pt-44">
+        <div className="flex items-center mycontainer">
           <Hero />
         </div>
       </section>
 
       <section className="bg-slate-100 dark:bg-slate-800">
-        <div className="mycontainer py-10">
+        <div className="py-10 mycontainer">
           <Heading title="About Me" />
           <AboutMe />
         </div>
@@ -39,8 +39,20 @@ function App() {
         <div className="mycontainer">
           <Heading
             title="Experience"
-            subtitle="The skills, tools and technologies that I work with"
+            subtitle="Here is a quick summary of my most recent experience"
           />
+
+          <ExperienceCard
+            logoURL="/img/logo-intertab-solo.png"
+            date="March 2024 - Present"
+            title="Web Developer"
+            responsabilities={[
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            ]}
+          />
+          
         </div>
       </section>
 
