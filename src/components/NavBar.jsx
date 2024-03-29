@@ -2,7 +2,7 @@ import { useState } from "react";
 
 export const NavBar = () => {
   const [darkMode, setDarkMode] = useState(true); // Dark mode
-  const [showMenu, setShowMenu] = useState(true); // Navigation
+  const [showMenu, setShowMenu] = useState(false); // Navigation
 
   if (darkMode) {
     document.querySelector("html").classList.add("dark");
@@ -20,10 +20,10 @@ export const NavBar = () => {
 
   return (
     <div className="flex justify-between items-center py-2 ">
-      <h1 className="font-semibold text-2xl">{"<BGC />"}</h1>
+      <h1 className="font-bold text-2xl">{"<BGC />"}</h1>
 
       <nav
-        className={`absolute w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 animate-fade-left animate-once ${
+        className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 animate-fade-left animate-once ${
           showMenu ? "" : "hidden"
         }`}
       >
@@ -33,6 +33,7 @@ export const NavBar = () => {
         </header>
 
         <ul className="py-4 border-b border-slate-500 space-y-4 md:flex md:py-0 md:space-y-0 md:gap-4 md:border-0">
+          <li>Home</li>
           <li>About</li>
           <li>Work</li>
           <li>Testimonials</li>
@@ -64,7 +65,7 @@ export const NavBar = () => {
           <img src="/icons/moon.svg" alt="" />
         </button>
         <button
-          className="hidden font-medium md:block py-1 px-3 rounded-xl dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
+          className="hidden font-medium md:block py-1 px-4 rounded-xl dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
           onClick={handleNavBar}
         >
           Download CV
