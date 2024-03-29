@@ -1,5 +1,7 @@
-import { NavBar } from "./components/";
+import { Heading, NavBar, SkillsList } from "./components/";
 import { AboutMe, Hero } from "./layout/";
+
+import { skills } from './data/skills';
 
 function App() {
   return (
@@ -18,16 +20,18 @@ function App() {
 
       <section className="bg-slate-100 dark:bg-slate-800">
         <div className="mycontainer py-20">
-          <div className="flex justify-center">
-            <h3 className="text-center text-lg font-medium px-4 py-1 mb-5 rounded-3xl dark:bg-slate-700">
-              About Me
-            </h3>
-          </div>
+          <Heading title='About Me'/>
           <AboutMe />
         </div>
       </section>
 
-      
+      <section className="py-20">
+        <div className="mycontainer">
+          <Heading title="Skills" subtitle="The skills, tools and technologies that I work with"/>
+          <SkillsList skills={skills} />
+        </div>
+      </section>
+
     </>
   );
 }
