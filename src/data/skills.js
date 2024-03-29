@@ -64,4 +64,14 @@ export const skills = [
     name: "PostgreSQL",
     iconURL: "/icons/postgresql.svg",
   },
+  {
+    id: 14,
+    name: "Git",
+    iconURL: "/icons/git.svg",
+  },
+  {
+    id: 15,
+    name: "GitHub",
+    iconURL: "/icons/github-logo.svg",
+  },
 ];

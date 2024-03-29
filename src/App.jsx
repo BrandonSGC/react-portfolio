@@ -1,4 +1,10 @@
-import { ExperienceCard, Heading, NavBar, SkillsList } from "./components/";
+import {
+  ExperienceCard,
+  Heading,
+  NavBar,
+  ProjectCard,
+  SkillsList,
+} from "./components/";
 import { AboutMe, Hero } from "./layout/";
 
 import { skills } from "./data/skills";
@@ -52,7 +58,17 @@ function App() {
               "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
             ]}
           />
-          
+
+          <ExperienceCard
+            logoURL="/img/sykes-logo.png"
+            date="March 2024 - Present"
+            title="Customer Service Agent"
+            responsabilities={[
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+            ]}
+          />
         </div>
       </section>
 
@@ -62,6 +78,37 @@ function App() {
             title="Projects"
             subtitle="Some of the noteworthy projects I have built:"
           />
+
+          <div className="grid gap-4 mt-5">
+            <ProjectCard
+              imageURL="/img/nucleus.png"
+              title="Nucleus Wallet"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur"
+              tags={["HTML", "CSS"]}
+            />
+
+            <ProjectCard
+              imageURL="/img/nucleus.png"
+              title="Nucleus Wallet"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur"
+              tags={["HTML", "CSS"]}
+              invertOrder
+            />
+
+            <ProjectCard
+              imageURL="/img/nucleus.png"
+              title="Nucleus Wallet"
+              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur"
+              tags={[
+                "HTML",
+                "CSS",
+                "JavaScript",
+                "ReactJS",
+                "NodeJS",
+                "PostgreSQL",
+              ]}
+            />
+          </div>
         </div>
       </main>
 
