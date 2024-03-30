@@ -1,3 +1,5 @@
+import { SocialMediaList } from "../components";
+
 export const Hero = () => {
   return (
     <div className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
@@ -26,23 +28,7 @@ export const Hero = () => {
           </div>
         </div>
 
-        <div className="flex items-center gap-2">
-          <img
-            className="duration-200 cursor-pointer hover:scale-125"
-            src="/icons/github.svg"
-            alt="GitHub"
-          />
-          <img
-            className="duration-200 cursor-pointer hover:scale-125"
-            src="/icons/twitter.svg"
-            alt="Twitter"
-          />
-          <img
-            className="duration-200 cursor-pointer hover:scale-125"
-            src="/icons/figma.svg"
-            alt="Figma"
-          />
-        </div>
+        <SocialMediaList />
       </div>
 
       <div className="grid items-center">
