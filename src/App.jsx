@@ -4,9 +4,9 @@ import {
   NavBar,
   ProjectCard,
   SkillsList,
+  TestimonialCard,
 } from "./components/";
-import { AboutMe, Hero } from "./layout/";
-
+import { AboutMe, Footer, Hero } from "./layout/";
 import { skills } from "./data/skills";
 
 function App() {
@@ -79,7 +79,7 @@ function App() {
             subtitle="Some of the noteworthy projects I have built:"
           />
 
-          <div className="grid gap-4 mt-5">
+          <div className="grid gap-4 mt-10">
             <ProjectCard
               imageURL="/img/nucleus.png"
               title="Nucleus Wallet"
@@ -112,23 +112,22 @@ function App() {
         </div>
       </main>
 
-      <section className="py-10 bg-slate-100 dark:bg-slate-800">
+      <section className="py-10 bg-slate-100 dark:bg-slate-900">
         <div className="mycontainer">
           <Heading
             title="Testimonials"
             subtitle="Nice things people have said about me:"
           />
+
+          <div className="grid gap-4 mt-10 md:grid-cols-3 md:gap-4 lg:gap-14">
+            <TestimonialCard />
+            <TestimonialCard />
+            <TestimonialCard />
+          </div>
         </div>
       </section>
 
-      <footer className="py-10">
-        <div className="mycontainer">
-          <Heading
-            title="Get in touch"
-            subtitle="What's next? Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect."
-          />
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
