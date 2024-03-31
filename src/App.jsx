@@ -7,7 +7,7 @@ import {
   TestimonialCard,
 } from "./components/";
 import { AboutMe, Footer, Hero } from "./layout/";
-import { skills } from "./data/skills";
+import { skills, experiences, projects, testimonials } from "./data/";
 
 function App() {
   return (
@@ -48,27 +48,17 @@ function App() {
             subtitle="Here is a quick summary of my most recent experience"
           />
 
-          <ExperienceCard
-            logoURL="/img/logo-intertab-solo.png"
-            date="March 2024 - Present"
-            title="Web Developer"
-            responsabilities={[
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-            ]}
-          />
-
-          <ExperienceCard
-            logoURL="/img/sykes-logo.png"
-            date="March 2024 - Present"
-            title="Customer Service Agent"
-            responsabilities={[
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-              "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-            ]}
-          />
+          {experiences?.map((experience) => (
+            <ExperienceCard
+              key={experience.id}
+              logoURL={experience.logoURL}
+              companyName={experience.companyName}
+              startDate={experience.startDate}
+              finishDate={experience.finishDate}
+              jobTitle={experience.jobTitle}
+              responsabilities={experience.responsabilities}
+            />
+          ))}
         </div>
       </section>
 
@@ -80,34 +70,17 @@ function App() {
           />
 
           <div className="grid gap-4 mt-10">
-            <ProjectCard
-              imageURL="/img/nucleus.png"
-              title="Nucleus Wallet"
-              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur"
-              tags={["HTML", "CSS"]}
-            />
-
-            <ProjectCard
-              imageURL="/img/nucleus.png"
-              title="Nucleus Wallet"
-              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur"
-              tags={["HTML", "CSS"]}
-              invertOrder
-            />
-
-            <ProjectCard
-              imageURL="/img/nucleus.png"
-              title="Nucleus Wallet"
-              description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur"
-              tags={[
-                "HTML",
-                "CSS",
-                "JavaScript",
-                "ReactJS",
-                "NodeJS",
-                "PostgreSQL",
-              ]}
-            />
+            {projects?.map((project, i) => (
+              <ProjectCard
+                key={project.id}
+                imageURL={project.imageURL}
+                name={project.name}
+                description={project.description}
+                tags={project.tags}
+                invertOrder={i % 2 === 0}
+                url={project.url}
+              />
+            ))}
           </div>
         </div>
       </main>
@@ -120,9 +93,15 @@ function App() {
           />
 
           <div className="grid gap-4 mt-10 md:grid-cols-3 md:gap-4 lg:gap-14">
-            <TestimonialCard />
-            <TestimonialCard />
-            <TestimonialCard />
+            {testimonials?.map((testimonial) => (
+              <TestimonialCard
+                key={testimonial.id}
+                authorImageURL={testimonial.authorImageURL}
+                name={testimonial.name}
+                comment={testimonial.comment}
+                jobPosition={testimonial.jobPosition}
+              />
+            ))}
           </div>
         </div>
       </section>

@@ -9,7 +9,6 @@ export const Footer = () => {
       />
 
       <div className="mycontainer">
-
         <div className="mt-8 space-y-4 text-center">
           <div className="flex items-center justify-center gap-2">
             <img className="size-5" src="/icons/letter.svg" alt="icon" />
@@ -23,12 +22,12 @@ export const Footer = () => {
             <img className="size-5" src="/icons/copy.svg" alt="icon" />
           </div>
           <div className="flex flex-col items-center gap-1">
-            <p className="font-light">You may also find me in these platforms!</p>
+            <p className="font-light">
+              You may also find me in these platforms!
+            </p>
             <SocialMediaList />
           </div>
-
         </div>
-        
       </div>
     </footer>
   );
