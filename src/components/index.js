@@ -5,3 +5,4 @@ export * from './SkillsList';
 export * from './ExperienceCard';
 export * from './ProjectCard';
 export * from './TestimonialCard'
+export * from './DarkModeButton'
