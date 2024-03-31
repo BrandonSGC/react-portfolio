@@ -73,7 +73,7 @@ export const NavBar = () => {
         </div>
       </nav>
 
-      <div className="items-center gap-2 md:flex">
+      <div className="items-center gap-4 md:flex">
         <button className="md:hidden" onClick={handleNavBar}>
           <img src="/icons/menu-hamburger.svg" alt="menu" />
         </button>
@@ -81,7 +81,7 @@ export const NavBar = () => {
           <DarkModeButton />
         </div>
         <button
-          className="hidden px-4 py-1 font-medium md:block rounded-xl dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
+          className="hidden px-4 py-1 font-medium duration-200 shadow-sm md:block rounded-xl bg-slate-200 hover:bg-slate-300 dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
           onClick={handleNavBar}
         >
           Download CV

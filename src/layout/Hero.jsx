@@ -4,7 +4,10 @@ export const Hero = () => {
   return (
     <div className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
       <div className="space-y-6 lg:col-start-1 lg:col-end-3">
-        <h2 className="text-3xl font-bold md:text-6xl">Hi, I'm Brandon 👋</h2>
+        <h2 className="text-3xl font-bold md:text-6xl">
+          Hi, I'm Brandon{" "}
+          <span className="inline-block animate-wiggle animate-infinite animate-ease-in-out -z-50">👋</span>
+        </h2>
         <p className="text-balance">
           I'm a full stack developer (React.js & Node.js) with a focus on
           creating (and occasionally designing) exceptional digital experiences
