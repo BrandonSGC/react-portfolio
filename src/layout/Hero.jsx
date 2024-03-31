@@ -6,7 +6,7 @@ export const Hero = () => {
       <div className="space-y-6 lg:col-start-1 lg:col-end-3">
         <h2 className="text-3xl font-bold md:text-6xl">
           Hi, I'm Brandon{" "}
-          <span className="inline-block animate-wiggle animate-infinite animate-ease-in-out -z-50">👋</span>
+          <span className="inline-block">👋</span>
         </h2>
         <p className="text-balance">
           I'm a full stack developer (React.js & Node.js) with a focus on

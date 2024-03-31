@@ -15,7 +15,7 @@ export const ProjectCard = ({
         href={url}
         target="_blank"
       >
-        <img className="duration-200 rounded-xl hover:scale-95" src={imageURL} alt={name} />
+        <img className="rounded-xl" src={imageURL} alt={name} />
       </a>
 
       <div
