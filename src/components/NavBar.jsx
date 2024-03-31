@@ -1,25 +1,24 @@
 import { useState } from "react";
 
+import { DarkModeButton } from "./";
+
 export const NavBar = () => {
-  const [darkMode, setDarkMode] = useState(true); // Dark mode
   const [showMenu, setShowMenu] = useState(false); // Navigation
 
-  if (darkMode) {
-    document.querySelector("html").classList.add("dark");
-  } else {
-    document.querySelector("html").classList.remove("dark");
-  }
-
-  const handleDarkMode = () => {
-    setDarkMode(!darkMode);
-  };
+  const links = [
+    { id: 1, title: "Home", target: "home" },
+    { id: 2, title: "About", target: "about" },
+    { id: 3, title: "Projects", target: "projects" },
+    { id: 4, title: "Testimonials", target: "testimonials" },
+    { id: 5, title: "Contact", target: "contact" },
+  ];
 
   const handleNavBar = () => {
     setShowMenu(!showMenu);
   };
 
-  const handleNavLinkClick = (event, targetId) => {
-    event.preventDefault();
+  const handleNavLinkClick = (e, targetId) => {
+    e.preventDefault();
 
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
@@ -35,7 +34,7 @@ export const NavBar = () => {
       </a>
 
       <nav
-        className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 animate-fade-left animate-once ${
+        className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 animate-fade-left md:animate-fade animate-once ${
           showMenu ? "" : "hidden"
         }`}
       >
@@ -47,39 +46,23 @@ export const NavBar = () => {
         </header>
 
         <ul className="py-4 space-y-4 border-b bg-slate-200 md:bg-slate-100 dark:bg-slate-900 dark:md:bg-slate-950 border-slate-500 md:flex md:py-0 md:space-y-0 md:gap-4 md:border-0">
-          <li>
-            <a onClick={(e) => handleNavLinkClick(e, "home")} href="#">
-              Home
-            </a>
-          </li>
-          <li>
-            <a onClick={(e) => handleNavLinkClick(e, "about")} href="#">
-              About
-            </a>
-          </li>
-          <li>
-            <a onClick={(e) => handleNavLinkClick(e, "projects")} href="#">
-              Projects
-            </a>
-          </li>
-          <li>
-            <a onClick={(e) => handleNavLinkClick(e, "testimonials")} href="#">
-              Testimonials
-            </a>
-          </li>
-          <li>
-            <a onClick={(e) => handleNavLinkClick(e, "contact")} href="#">
-              Contact
-            </a>
-          </li>
+          {links?.map((link) => (
+            <li key={link.id}>
+              <a
+                className="block"
+                onClick={(e) => handleNavLinkClick(e, link.target)}
+                href="#"
+              >
+                {link.title}
+              </a>
+            </li>
+          ))}
         </ul>
 
         <div className="md:hidden">
           <div className="flex items-center justify-between my-4">
             <p className="font-light ">Switch Theme</p>
-            <button onClick={handleDarkMode}>
-              <img src="/icons/moon.svg" alt="" />
-            </button>
+            <DarkModeButton />
           </div>
           <button
             className="w-full p-2 font-medium rounded-xl dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
@@ -90,14 +73,13 @@ export const NavBar = () => {
         </div>
       </nav>
 
-      <div className="gap-2 md:flex">
+      <div className="items-center gap-2 md:flex">
         <button className="md:hidden" onClick={handleNavBar}>
           <img src="/icons/menu-hamburger.svg" alt="menu" />
         </button>
-
-        <button className="hidden md:block" onClick={handleDarkMode}>
-          <img src="/icons/moon.svg" alt="" />
-        </button>
+        <div className="hidden md:block size-6">
+          <DarkModeButton />
+        </div>
         <button
           className="hidden px-4 py-1 font-medium md:block rounded-xl dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
           onClick={handleNavBar}
