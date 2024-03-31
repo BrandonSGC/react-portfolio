@@ -1,4 +1,4 @@
-import { Heading, SocialMediaList } from "../components";
+import { Heading, SocialMediaList, CopyButton } from "../components";
 
 export const Footer = () => {
   return (
@@ -13,13 +13,13 @@ export const Footer = () => {
           <div className="flex items-center justify-center gap-2">
             <img className="size-5" src="/icons/letter.svg" alt="icon" />
             <p className="font-bold">brangmz20@gmail.com</p>
-            <img className="size-5" src="/icons/copy.svg" alt="icon" />
+            <CopyButton textToCopy="brangmz20@gmail.com" size="size-5" />
           </div>
 
           <div className="flex items-center justify-center gap-2">
             <img className="size-5" src="/icons/phone.svg" alt="icon" />
             <p className="font-bold">+506 70428451</p>
-            <img className="size-5" src="/icons/copy.svg" alt="icon" />
+            <CopyButton textToCopy="+506 70428451" size="size-5" />
           </div>
           <div className="flex flex-col items-center gap-1">
             <p className="font-light">
