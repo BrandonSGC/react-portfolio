@@ -18,20 +18,20 @@ function App() {
         </div>
       </header>
 
-      <section className="pt-20 pb-20 md:pt-44">
+      <section id="home" className="pt-20 pb-20 md:pt-44">
         <div className="flex items-center mycontainer">
           <Hero />
         </div>
       </section>
 
-      <section className="bg-slate-100 dark:bg-slate-800">
+      <section id="about" className="bg-slate-100 dark:bg-slate-800">
         <div className="py-10 mycontainer">
           <Heading title="About Me" />
           <AboutMe />
         </div>
       </section>
 
-      <section className="py-10">
+      <section id="skills" className="py-10">
         <div className="mycontainer">
           <Heading
             title="Skills"
@@ -41,7 +41,7 @@ function App() {
         </div>
       </section>
 
-      <section className="py-10 bg-slate-100 dark:bg-slate-900">
+      <section id="experience" className="py-10 bg-slate-100 dark:bg-slate-900">
         <div className="mycontainer">
           <Heading
             title="Experience"
@@ -62,7 +62,7 @@ function App() {
         </div>
       </section>
 
-      <main className="py-10">
+      <main id="projects" className="py-10">
         <div className="mycontainer">
           <Heading
             title="Projects"
@@ -85,7 +85,10 @@ function App() {
         </div>
       </main>
 
-      <section className="py-10 bg-slate-100 dark:bg-slate-900">
+      <section
+        id="testimonials"
+        className="py-10 bg-slate-100 dark:bg-slate-900"
+      >
         <div className="mycontainer">
           <Heading
             title="Testimonials"

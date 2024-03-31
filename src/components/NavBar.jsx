@@ -18,9 +18,21 @@ export const NavBar = () => {
     setShowMenu(!showMenu);
   };
 
+  const handleNavLinkClick = (event, targetId) => {
+    event.preventDefault();
+
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: "smooth" });
+      setShowMenu(false); // Close the navbar menu after clicking on a link
+    }
+  };
+
   return (
     <div className="flex items-center justify-between py-4">
-      <h1 className="text-3xl font-bold">{"<BGC />"}</h1>
+      <a onClick={(e) => handleNavLinkClick(e, "home")} href="">
+        <h1 className="text-3xl font-bold">{"<BGC />"}</h1>
+      </a>
 
       <nav
         className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 animate-fade-left animate-once ${
@@ -29,15 +41,37 @@ export const NavBar = () => {
       >
         <header className="flex items-center justify-between pb-4 border-b border-slate-500 md:hidden">
           <h1 className="text-2xl font-semibold">{"<BGC />"}</h1>
-          <button onClick={handleNavBar}>X</button>
+          <button onClick={handleNavBar}>
+            <img src="/icons/x.svg" alt="Close Icon" />
+          </button>
         </header>
 
         <ul className="py-4 space-y-4 border-b bg-slate-200 md:bg-slate-100 dark:bg-slate-900 dark:md:bg-slate-950 border-slate-500 md:flex md:py-0 md:space-y-0 md:gap-4 md:border-0">
-          <li>Home</li>
-          <li>About</li>
-          <li>Work</li>
-          <li>Testimonials</li>
-          <li>Contact</li>
+          <li>
+            <a onClick={(e) => handleNavLinkClick(e, "home")} href="#">
+              Home
+            </a>
+          </li>
+          <li>
+            <a onClick={(e) => handleNavLinkClick(e, "about")} href="#">
+              About
+            </a>
+          </li>
+          <li>
+            <a onClick={(e) => handleNavLinkClick(e, "projects")} href="#">
+              Projects
+            </a>
+          </li>
+          <li>
+            <a onClick={(e) => handleNavLinkClick(e, "testimonials")} href="#">
+              Testimonials
+            </a>
+          </li>
+          <li>
+            <a onClick={(e) => handleNavLinkClick(e, "contact")} href="#">
+              Contact
+            </a>
+          </li>
         </ul>
 
         <div className="md:hidden">

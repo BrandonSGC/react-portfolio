@@ -2,7 +2,7 @@ import { Heading, SocialMediaList } from "../components";
 
 export const Footer = () => {
   return (
-    <footer className="py-10">
+    <footer id="contact" className="py-10">
       <Heading
         title="Get in touch"
         subtitle="Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect."
