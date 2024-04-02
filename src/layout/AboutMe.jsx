@@ -7,22 +7,27 @@ export const AboutMe = () => {
 
       <div className="my-10 space-y-5">
         <h3 className="text-4xl font-semibold ">
-          Curious about me? Here you have it:
+          Do you want to know more about me?
         </h3>
         <p>
-          I'm a passionate, self-proclaimed designer who specializes in full
-          stack development (React.js & Node.js). I am very enthusiastic about
-          bringing the technical and visual aspects of digital products to life.
-          User experience, pixel perfect design, and writing clear, readable,
-          highly performant code matters to me.
+          I'm an aspiring junior developer deeply passionate about programming,
+          specializing in full-stack development with React.js & Node.js. With
+          an insatiable hunger for learning. I Prioritize user experience, and
+          writing clean, highly performant code, I am dedicated to honing my
+          skills and crafting innovative React.js and Node.js applications.
         </p>
         <p>
-          I began my journey as a web developer in 2015, and since then, I've
-          continued to grow and evolve as a developer, taking on new challenges
-          and learning the latest technologies along the way. Now, in my early
-          thirties, 7 years after starting my web development journey, I'm
-          building cutting-edge web applications using modern technologies such
-          as Next.js, TypeScript, Nestjs, Tailwindcss, Supabase and much more.
+          I started my journey into programming at the age of 20 at{" "}
+          <a
+            className="underline duration-200 text-slate-700 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-500"
+            href="https://www.cuc.ac.cr/"
+            target="_blank"
+          >
+            Colegio Universitario de Cartago
+          </a>{" "}
+          in 2020. Fuelled by an insatiable curiosity and self-determination, I
+          delved into the world of web development. I continuously expanding my
+          skill set to build innovative solutions.
         </p>
       </div>
     </div>

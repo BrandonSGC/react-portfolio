@@ -5,15 +5,13 @@ export const Hero = () => {
     <div className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
       <div className="space-y-6 lg:col-start-1 lg:col-end-3">
         <h2 className="text-3xl font-bold md:text-6xl">
-          Hi, I'm Brandon{" "}
-          <span className="inline-block">👋</span>
+          Hi, I'm Brandon <span className="inline-block">👋</span>
         </h2>
         <p className="text-balance">
-          I'm a full stack developer (React.js & Node.js) with a focus on
-          creating (and occasionally designing) exceptional digital experiences
-          that are fast, accessible, visually appealing, and responsive. Even
-          though I have been creating web applications for over 7 years, I still
-          love it as if it was something new.
+          I'm a full-stack web developer (React.js & Node.js) with a focus on
+          creating beautiful, responsive, fast and accessible websites. I've
+          been loving programming since I started, so let's bring your digital
+          vision to life!
         </p>
 
         <div>
@@ -34,7 +32,7 @@ export const Hero = () => {
         <SocialMediaList />
       </div>
 
-      <div className="grid items-center">
+      <div>
         <img src="/img/programmer.svg" alt="Me" />
       </div>
     </div>

@@ -2,25 +2,25 @@ export const testimonials = [
   {
     id: "1",
     authorImageURL: "/img/me.jpg",
-    name: "Brandon Gómez",
+    name: "Michael Rodriguez",
     comment:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt itaque impedit fugit repellat explicabo repellendus eius deleniti suscipit facere exercitationem minima."',
-    jobPosition: "Supervisor - Intertab",
+      '"Brandon\'s dedication to web development is impressive. Despite being new to the field, their enthusiasm and quick learning have led to consistently high-quality work. Highly recommended."',
+    jobPosition: "Senior Developer",
   },
   {
     id: "2",
     authorImageURL: "/img/me.jpg",
     name: "Jeremy Araya",
     comment:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt itaque impedit fugit repellat explicabo repellendus eius deleniti suscipit facere exercitationem minima."',
+      '"Brandon\'s rapid growth and adaptability make them stand out. Their maturity and professionalism surpass their years, and their recent projects showcase their ability to thrive. A bright future awaits them"',
     jobPosition: "Supervisor - Intertab",
   },
   {
     id: "3",
     authorImageURL: "/img/me.jpg",
-    name: "Brandon Gómez",
+    name: "David Thompson",
     comment:
-      '"Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus incidunt itaque impedit fugit repellat explicabo repellendus eius deleniti suscipit facere exercitationem minima."',
-    jobPosition: "Supervisor - Intertab",
+      '"Collaborating with Brandon was a pleasure. Their creativity, attention to detail, and expertise in modern technologies like React.js and Node.js were instrumental in our project\'s success. Excited to see their continued growth."',
+    jobPosition: "UX Designer",
   },
 ];

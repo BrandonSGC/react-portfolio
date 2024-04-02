@@ -35,7 +35,7 @@ function App() {
         <div className="mycontainer">
           <Heading
             title="Skills"
-            subtitle="The skills, tools and technologies that I work with"
+            subtitle="These are the technologies that I work with"
           />
           <SkillsList skills={skills} />
         </div>
@@ -56,6 +56,7 @@ function App() {
               startDate={experience.startDate}
               finishDate={experience.finishDate}
               jobTitle={experience.jobTitle}
+              time={experience.time}
               responsabilities={experience.responsabilities}
             />
           ))}

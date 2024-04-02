@@ -1,4 +1,4 @@
-import { v4 } from 'uuid';
+import { v4 } from "uuid";
 
 export const ExperienceCard = ({
   logoURL,
@@ -6,6 +6,7 @@ export const ExperienceCard = ({
   startDate,
   finishDate,
   jobTitle,
+  time,
   responsabilities = [],
 }) => {
   return (
@@ -13,9 +14,14 @@ export const ExperienceCard = ({
       <div className="flex items-center justify-center">
         <img src={logoURL} alt={companyName} />
       </div>
-      <p className="col-start-3 col-end-4 my-3 font-light text-slate-700 dark:text-slate-300 md:flex md:items-center md:justify-center">
-        {startDate} - {finishDate}
-      </p>
+
+      <div className="flex items-center justify-between">
+        <p className="col-start-3 col-end-4 my-3 font-light text-slate-700 dark:text-slate-300 md:flex md:items-center md:justify-center">
+          {startDate} - {finishDate}
+        </p>
+        <p className="font-medium">{time}</p>
+      </div>
+      
       <div className="col-start-2 col-end-3 row-start-1 row-end-2">
         <h3 className="mb-2 text-xl font-bold md:text-center">{jobTitle}</h3>
         <ul className="pl-6 list-disc text-slate-600 dark:text-slate-300">

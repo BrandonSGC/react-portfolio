@@ -5,7 +5,7 @@ export const Footer = () => {
     <footer id="contact" className="pt-10">
       <Heading
         title="Get in touch"
-        subtitle="Feel free to reach out to me if you're looking for a developer, have a query, or simply want to connect."
+        subtitle="Feel free to reach out to me if you're looking for a developer or simply want to connect."
       />
 
       <div className="mycontainer">
