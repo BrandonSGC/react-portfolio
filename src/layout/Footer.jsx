@@ -1,6 +1,9 @@
-import { Heading, SocialMediaList, CopyButton } from "../components";
+import { Copy } from "../assets";
+import { Heading, SocialMediaList } from "../components";
+import { useCopyText } from "../hooks/useCopyText";
 
 export const Footer = () => {
+  const { copyToCipboard } = useCopyText();
   return (
     <footer id="contact" className="pt-10">
       <Heading
@@ -13,16 +16,26 @@ export const Footer = () => {
           <div className="flex items-center justify-center gap-2">
             <img className="size-5" src="/icons/letter.svg" alt="icon" />
             <p className="font-bold">brangmz20@gmail.com</p>
-            <CopyButton textToCopy="brangmz20@gmail.com" size="size-5" />
+            <div
+              className="duration-200 cursor-pointer size-5 hover:scale-105"
+              onClick={() => copyToCipboard("brangmz20@gmail.com")}
+            >
+              <Copy />
+            </div>
           </div>
 
           <div className="flex items-center justify-center gap-2">
             <img className="size-5" src="/icons/phone.svg" alt="icon" />
             <p className="font-bold">+506 70428451</p>
-            <CopyButton textToCopy="+506 70428451" size="size-5" />
+            <div
+              className="duration-200 cursor-pointer size-5 hover:scale-105"
+              onClick={() => copyToCipboard("+506 70428451")}
+            >
+              <Copy />
+            </div>
           </div>
           <div className="flex flex-col items-center gap-1">
-            <p className="font-light">
+            <p className="mb-2 font-light">
               You may also find me in these platforms!
             </p>
             <SocialMediaList />
