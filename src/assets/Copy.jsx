@@ -1,18 +1,11 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { DarkModeContext } from "../context/DarkModeContext";
-import { useCopyText } from "../hooks/useCopyText";
 
-export const CopyButton = ( { textToCopy = '', size = 'size-5' } ) => {
-
+export const Copy = () => {
   const { darkMode } = useContext(DarkModeContext);
-  const { copyToCipboard } = useCopyText();
-
   return (
-    <button onClick={() => copyToCipboard(textToCopy)}>
+    <>
       <svg
-        className={`${size} hover:scale-110`}
-        width="32"
-        height="32"
         viewBox="0 0 32 32"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -32,6 +25,6 @@ export const CopyButton = ( { textToCopy = '', size = 'size-5' } ) => {
           strokeLinejoin="round"
         />
       </svg>
-    </button>
+    </>
   );
 };

@@ -30,7 +30,9 @@ export const NavBar = () => {
   return (
     <div className="flex items-center justify-between py-4">
       <a onClick={(e) => handleNavLinkClick(e, "home")} href="">
-        <h1 className="text-3xl font-bold">{"<BGC />"}</h1>
+        <h1 className="text-3xl font-bold text-blue-500 dark:text-white ">
+          {"<BGC />"}
+        </h1>
       </a>
 
       <nav
