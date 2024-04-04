@@ -59,7 +59,9 @@ export const Footer = () => {
           >
             Brandon Gomez Carvajal
           </a>
-          👋
+          <span className="inline-block ml-1 animate-wiggle-more animate-infinite">
+            👋
+          </span>
         </p>
       </div>
     </footer>

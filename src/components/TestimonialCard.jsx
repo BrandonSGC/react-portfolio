@@ -5,7 +5,7 @@ export const TestimonialCard = ({
   jobPosition,
 }) => {
   return (
-    <div className="p-8 space-y-4 rounded-xl bg-slate-200 dark:bg-slate-800 dark:text-slate-300">
+    <div className="p-8 space-y-4 shadow rounded-xl bg-slate-200 dark:bg-slate-800 dark:text-slate-300">
       <div>
         <img
           className="mx-auto rounded-full size-20"
