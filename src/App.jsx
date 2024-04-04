@@ -48,18 +48,20 @@ function App() {
             subtitle="Here is a quick summary of my most recent experience"
           />
 
-          {experiences?.map((experience) => (
-            <ExperienceCard
-              key={experience.id}
-              logoURL={experience.logoURL}
-              companyName={experience.companyName}
-              startDate={experience.startDate}
-              finishDate={experience.finishDate}
-              jobTitle={experience.jobTitle}
-              time={experience.time}
-              responsabilities={experience.responsabilities}
-            />
-          ))}
+          <div className="flex flex-col items-center gap-4 my-5">
+            {experiences?.map((experience) => (
+              <ExperienceCard
+                key={experience.id}
+                logoURL={experience.logoURL}
+                companyName={experience.companyName}
+                startDate={experience.startDate}
+                finishDate={experience.finishDate}
+                jobTitle={experience.jobTitle}
+                time={experience.time}
+                responsabilities={experience.responsabilities}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
