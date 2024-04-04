@@ -1,11 +1,8 @@
-import { useState } from "react";
 import { AboutMe, Footer, Hero } from "./layout/";
 import { experiences, projects, testimonials } from "./data/";
 import {
-  ContactForm,
   ExperienceList,
   Heading,
-  Modal,
   NavBar,
   ProjectsList,
   SkillsList,
@@ -13,9 +10,6 @@ import {
 } from "./components/";
 
 function App() {
-  const [isOpen, setIsOpen] = useState(false);
-
-
   return (
     <>
       <header className="fixed z-50 w-full bg-slate-100 dark:bg-slate-950">
