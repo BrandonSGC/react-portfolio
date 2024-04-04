@@ -1,9 +1,12 @@
 import { Copy, Letter, Phone } from "../assets";
-import { Heading, SocialMediaList } from "../components";
+import { ContactForm, Heading, Modal, SocialMediaList } from "../components";
 import { useCopyText } from "../hooks/useCopyText";
+import { useModal } from "../hooks/useModal";
 
 export const Footer = () => {
+  const { isOpen, handleOpen } = useModal();
   const { copyToCipboard } = useCopyText();
+
   return (
     <footer id="contact" className="pt-10">
       <Heading
@@ -12,7 +15,7 @@ export const Footer = () => {
       />
 
       <div className="mycontainer">
-        <div className="pb-5 mt-10 space-y-4 text-center">
+        <div className="pb-5 mt-6 space-y-4 text-center">
           <div className="flex items-center justify-center gap-2">
             <div className="size-6">
               <Letter />
@@ -38,6 +41,14 @@ export const Footer = () => {
               <Copy />
             </div>
           </div>
+
+          <button
+            className="px-3 py-1 font-medium text-white rounded-lg bg-slate-500 hover:bg-slate-600 dark:bg-white dark:hover:bg-slate-200 dark:text-slate-700"
+            onClick={handleOpen}
+          >
+            Open Contact Form
+          </button>
+
           <div className="flex flex-col items-center gap-1">
             <p className="mb-2 font-light">
               You may also find me in these platforms!
@@ -64,6 +75,12 @@ export const Footer = () => {
           </span>
         </p>
       </div>
+
+      {isOpen && (
+        <Modal handleOpen={handleOpen}>
+          <ContactForm />
+        </Modal>
+      )}
     </footer>
   );
 };

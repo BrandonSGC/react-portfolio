@@ -9,3 +9,5 @@ export * from './DarkModeButton';
 export * from './TestimonialsList';
 export * from './ProjectsList';
 export * from './ExperienceList';
+export * from './Modal';
+export * from './ContactForm';
