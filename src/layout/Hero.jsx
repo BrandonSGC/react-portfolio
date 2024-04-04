@@ -1,3 +1,4 @@
+import { Location } from "../assets";
 import { SocialMediaList } from "../components";
 
 export const Hero = () => {
@@ -16,11 +17,9 @@ export const Hero = () => {
 
         <div>
           <div className="flex items-center gap-2">
-            <img
-              className="size-5"
-              src="/icons/location.svg"
-              alt="Location Icon"
-            />
+            <div className="size-5">
+              <Location />
+            </div>
             <p>San José, Costa Rica</p>
           </div>
           <div className="flex items-center gap-2">

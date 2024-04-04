@@ -4,6 +4,5 @@ export * from './SocialMediaList'
 export * from './SkillsList';
 export * from './ExperienceCard';
 export * from './ProjectCard';
-export * from './TestimonialCard'
-export * from './DarkModeButton'
-export * from './CopyButton'
+export * from './TestimonialCard';
+export * from './DarkModeButton';

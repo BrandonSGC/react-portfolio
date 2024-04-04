@@ -1,4 +1,4 @@
-import { Copy } from "../assets";
+import { Copy, Letter, Phone } from "../assets";
 import { Heading, SocialMediaList } from "../components";
 import { useCopyText } from "../hooks/useCopyText";
 
@@ -14,7 +14,9 @@ export const Footer = () => {
       <div className="mycontainer">
         <div className="pb-5 mt-10 space-y-4 text-center">
           <div className="flex items-center justify-center gap-2">
-            <img className="size-5" src="/icons/letter.svg" alt="icon" />
+            <div className="size-6">
+              <Letter />
+            </div>
             <p className="font-bold">brangmz20@gmail.com</p>
             <div
               className="duration-200 cursor-pointer size-5 hover:scale-105"
@@ -25,7 +27,9 @@ export const Footer = () => {
           </div>
 
           <div className="flex items-center justify-center gap-2">
-            <img className="size-5" src="/icons/phone.svg" alt="icon" />
+            <div className="size-6">
+              <Phone />
+            </div>
             <p className="font-bold">+506 70428451</p>
             <div
               className="duration-200 cursor-pointer size-5 hover:scale-105"

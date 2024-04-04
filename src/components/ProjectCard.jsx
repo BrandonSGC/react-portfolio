@@ -1,3 +1,5 @@
+import { Link } from "../assets/";
+
 export const ProjectCard = ({
   imageURL,
   name,
@@ -36,12 +38,12 @@ export const ProjectCard = ({
           ))}
         </ul>
 
-        <a className="inline-block" href={url} target="_blank">
-          <img
-            className="mt-5 duration-200 hover:scale-110"
-            src="/icons/link.svg"
-            alt="Link icon"
-          />
+        <a
+          className="inline-block duration-200 hover:scale-105"
+          href={url}
+          target="_blank"
+        >
+          <Link size="6" />
         </a>
       </div>
     </div>

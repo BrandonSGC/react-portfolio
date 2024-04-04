@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import { DarkModeButton } from "./";
+import { CloseIcon, HamburguerMenu } from "../assets";
 
 export const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false); // Navigation
@@ -36,14 +37,14 @@ export const NavBar = () => {
       </a>
 
       <nav
-        className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 animate-fade-left md:animate-fade animate-once ${
-          showMenu ? "" : "hidden"
+        className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 md:animate-fade ${
+          showMenu ? "animate-fade-left" : "hidden"
         }`}
       >
         <header className="flex items-center justify-between pb-4 border-b border-slate-500 md:hidden">
           <h1 className="text-2xl font-semibold">{"<BGC />"}</h1>
-          <button onClick={handleNavBar}>
-            <img src="/icons/x.svg" alt="Close Icon" />
+          <button className="size-5" onClick={handleNavBar}>
+            <CloseIcon />
           </button>
         </header>
 
@@ -76,8 +77,8 @@ export const NavBar = () => {
       </nav>
 
       <div className="items-center gap-4 md:flex">
-        <button className="md:hidden" onClick={handleNavBar}>
-          <img src="/icons/menu-hamburger.svg" alt="menu" />
+        <button className="md:hidden size-6" onClick={handleNavBar}>
+          <HamburguerMenu />
         </button>
         <div className="hidden md:block size-6">
           <DarkModeButton />
