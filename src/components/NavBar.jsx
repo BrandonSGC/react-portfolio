@@ -37,7 +37,7 @@ export const NavBar = () => {
       </a>
 
       <nav
-        className={`absolute z-10 w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 md:animate-fade ${
+        className={`absolute w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 md:animate-fade ${
           showMenu ? "animate-fade-left" : "hidden"
         }`}
       >

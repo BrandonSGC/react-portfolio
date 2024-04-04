@@ -1,13 +1,13 @@
+import { AboutMe, Footer, Hero } from "./layout/";
+import { experiences, projects, skills, testimonials } from "./data/";
 import {
-  ExperienceCard,
+  ExperienceList,
   Heading,
   NavBar,
-  ProjectCard,
+  ProjectsList,
   SkillsList,
-  TestimonialCard,
+  TestimonialsList,
 } from "./components/";
-import { AboutMe, Footer, Hero } from "./layout/";
-import { skills, experiences, projects, testimonials } from "./data/";
 
 function App() {
   return (
@@ -37,7 +37,7 @@ function App() {
             title="Skills"
             subtitle="These are the technologies that I work with"
           />
-          <SkillsList skills={skills} />
+          <SkillsList />
         </div>
       </section>
 
@@ -47,21 +47,7 @@ function App() {
             title="Experience"
             subtitle="Here is a quick summary of my most recent experience"
           />
-
-          <div className="flex flex-col items-center gap-4 my-5">
-            {experiences?.map((experience) => (
-              <ExperienceCard
-                key={experience.id}
-                logoURL={experience.logoURL}
-                companyName={experience.companyName}
-                startDate={experience.startDate}
-                finishDate={experience.finishDate}
-                jobTitle={experience.jobTitle}
-                time={experience.time}
-                responsabilities={experience.responsabilities}
-              />
-            ))}
-          </div>
+          <ExperienceList experiences={experiences} />
         </div>
       </section>
 
@@ -71,20 +57,7 @@ function App() {
             title="Projects"
             subtitle="Some of the noteworthy projects I have built:"
           />
-
-          <div className="grid gap-4 mt-10">
-            {projects?.map((project, i) => (
-              <ProjectCard
-                key={project.id}
-                imageURL={project.imageURL}
-                name={project.name}
-                description={project.description}
-                tags={project.tags}
-                invertOrder={i % 2 === 0}
-                url={project.url}
-              />
-            ))}
-          </div>
+          <ProjectsList projects={projects} />
         </div>
       </main>
 
@@ -97,18 +70,7 @@ function App() {
             title="Testimonials"
             subtitle="Nice things people have said about me:"
           />
-
-          <div className="grid gap-4 mt-10 md:grid-cols-3 md:gap-4 lg:gap-14">
-            {testimonials?.map((testimonial) => (
-              <TestimonialCard
-                key={testimonial.id}
-                authorImageURL={testimonial.authorImageURL}
-                name={testimonial.name}
-                comment={testimonial.comment}
-                jobPosition={testimonial.jobPosition}
-              />
-            ))}
-          </div>
+          <TestimonialsList testimonials={testimonials} />
         </div>
       </section>
 

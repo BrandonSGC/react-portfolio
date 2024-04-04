@@ -6,3 +6,6 @@ export * from './ExperienceCard';
 export * from './ProjectCard';
 export * from './TestimonialCard';
 export * from './DarkModeButton';
+export * from './TestimonialsList';
+export * from './ProjectsList';
+export * from './ExperienceList';

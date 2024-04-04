@@ -4,15 +4,15 @@ export const ProjectCard = ({
   imageURL,
   name,
   description,
-  tags = [],
-  invertOrder = false,
+  tags,
+  invertOrder,
   url,
 }) => {
   return (
     <div className="grid max-w-5xl mx-auto overflow-hidden shadow-lg rounded-xl md:grid-cols-2">
       <a
         className={`flex items-center justify-center p-8 bg-slate-200 dark:bg-slate-600 ${
-          invertOrder ? "md:col-start-2 md:col-end-3" : ""
+          invertOrder && "md:col-start-2 md:col-end-3"
         }`}
         href={url}
         target="_blank"
@@ -22,7 +22,7 @@ export const ProjectCard = ({
 
       <div
         className={`p-8 space-y-3 bg-slate-100 dark:bg-slate-800 ${
-          invertOrder ? "md:col-start-1 md:col-end-2 md:row-start-1" : ""
+          invertOrder && "md:col-start-1 md:col-end-2 md:row-start-1"
         }`}
       >
         <h2 className="text-xl font-semibold">{name}</h2>
