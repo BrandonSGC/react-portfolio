@@ -68,7 +68,7 @@ export const NavBar = () => {
             <DarkModeButton />
           </div>
           <button
-            className="w-full p-2 font-medium rounded-xl dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
+            className="w-full p-2 font-medium bg-white shadow-sm rounded-xl dark:hover:bg-slate-200 dark:text-slate-950"
             onClick={handleNavBar}
           >
             Download CV
@@ -84,7 +84,7 @@ export const NavBar = () => {
           <DarkModeButton />
         </div>
         <button
-          className="hidden px-4 py-1 font-medium duration-200 shadow-sm md:block rounded-xl bg-slate-200 hover:bg-slate-300 dark:hover:bg-slate-200 dark:bg-white dark:text-slate-950"
+          className="hidden px-4 py-1 font-medium duration-200 bg-white shadow-sm md:block rounded-xl hover:bg-slate-300 dark:hover:bg-slate-200 dark:text-slate-950"
           onClick={handleNavBar}
         >
           Download CV
