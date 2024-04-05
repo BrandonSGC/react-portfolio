@@ -45,6 +45,7 @@ export const ContactForm = () => {
               type="text"
               name="name"
               id="name"
+              placeholder="Name"
               onChange={onInputChange}
               value={formData.name}
             />
@@ -59,6 +60,7 @@ export const ContactForm = () => {
               type="text"
               name="surname"
               id="surname"
+              placeholder="Surname"
               onChange={onInputChange}
               value={formData.surname}
             />
@@ -74,6 +76,7 @@ export const ContactForm = () => {
             type="email"
             name="email"
             id="email"
+            placeholder="email@example.com"
             onChange={onInputChange}
             value={formData.email}
           />
@@ -87,6 +90,7 @@ export const ContactForm = () => {
             className="w-full h-32 p-2 rounded-md bg-slate-200"
             name="message"
             id="message"
+            placeholder="Write your message"
             onChange={onInputChange}
             value={formData.message}
           ></textarea>
@@ -94,8 +98,8 @@ export const ContactForm = () => {
 
         {/* //TODO: Alert here */}
 
-        <button className="block w-full p-2 font-medium text-white duration-200 bg-slate-500 hover:bg-slate-600">
-          Send Data
+        <button className="block w-full p-2 font-medium text-white duration-200 rounded bg-slate-500 hover:bg-slate-600">
+          Send
         </button>
       </form>
     </div>
