@@ -48,11 +48,11 @@ export const NavBar = () => {
           </button>
         </header>
 
-        <ul className="py-4 space-y-4 border-b bg-slate-200 md:bg-white dark:bg-slate-900 dark:md:bg-slate-950 border-slate-500 md:flex md:py-0 md:space-y-0 md:gap-4 md:border-0">
+        <ul className="py-4 space-y-2 border-b bg-slate-200 md:bg-white dark:bg-slate-900 dark:md:bg-slate-950 border-slate-500 md:flex md:py-0 md:space-y-0 md:gap-4 md:border-0">
           {links?.map((link) => (
             <li key={link.id}>
               <a
-                className="block"
+                className="block p-2 duration-200 rounded hover:bg-slate-300 dark:hover:bg-slate-950 md:hover:bg-slate-200 md:dark:hover:bg-slate-900"
                 onClick={(e) => handleNavLinkClick(e, link.target)}
                 href="#"
               >
