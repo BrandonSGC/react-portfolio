@@ -1,9 +1,18 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { MoonIcon, SunIcon } from "../assets";
 import { DarkModeContext } from "../context/DarkModeContext";
 
 export const DarkModeButton = () => {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);
+
+  useEffect(() => {
+    const prefersDarkMode = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    if (prefersDarkMode) {
+      setDarkMode(true);
+    }
+  }, [setDarkMode]);
 
   if (darkMode) {
     document.querySelector("html").classList.add("dark");
