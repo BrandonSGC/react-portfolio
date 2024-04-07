@@ -4,7 +4,7 @@ import { useCopyText } from "../hooks/useCopyText";
 import { useModal } from "../hooks/useModal";
 
 export const Footer = () => {
-  const { isOpen, handleOpen } = useModal();
+  const { isOpen, toggleModal } = useModal();
   const { copyToCipboard } = useCopyText();
 
   return (
@@ -44,7 +44,7 @@ export const Footer = () => {
 
           <button
             className="px-3 py-1 font-medium text-white rounded-lg bg-slate-500 hover:bg-slate-600 dark:bg-white dark:hover:bg-slate-200 dark:text-slate-700"
-            onClick={handleOpen}
+            onClick={toggleModal}
           >
             Open Contact Form
           </button>
@@ -77,7 +77,7 @@ export const Footer = () => {
       </div>
 
       {isOpen && (
-        <Modal handleOpen={handleOpen}>
+        <Modal isOpen={isOpen} toggleModal={toggleModal}>
           <ContactForm />
         </Modal>
       )}

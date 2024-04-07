@@ -3,12 +3,12 @@ import { useState } from "react";
 export const useModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const handleOpen = () => {
+  const toggleModal = () => {
     setIsOpen(!isOpen);
   };
 
   return {
     isOpen,
-    handleOpen,
+    toggleModal,
   };
 };
