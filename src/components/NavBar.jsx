@@ -37,7 +37,7 @@ export const NavBar = () => {
       </a>
 
       <nav
-        className={`absolute w-[80%] h-screen top-0 right-0 bg-slate-200 dark:bg-slate-900 p-4 md:block md:static md:w-auto md:h-auto md:p-0 md:bg-white md:dark:bg-slate-950 md:animate-fade ${
+        className={`absolute w-[80%] bg-slate-200 dark:bg-slate-900 h-screen top-0 right-0 shadow md:shadow-none p-4 md:bg-white/0 md:dark:bg-slate-900/0 md:block md:static md:w-auto md:h-auto md:p-0 md:animate-fade ${
           showMenu ? "animate-fade-left" : "hidden"
         }`}
       >
@@ -48,7 +48,7 @@ export const NavBar = () => {
           </button>
         </header>
 
-        <ul className="py-4 space-y-2 border-b bg-slate-200 md:bg-white dark:bg-slate-900 dark:md:bg-slate-950 border-slate-500 md:flex md:py-0 md:space-y-0 md:gap-4 md:border-0">
+        <ul className="flex flex-col gap-2 py-4 border-b md:py-0 md:flex-row md:border-0">
           {links?.map((link) => (
             <li key={link.id}>
               <a

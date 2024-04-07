@@ -12,7 +12,7 @@ import {
 function App() {
   return (
     <>
-      <header className="fixed z-50 w-full bg-white shadow-sm dark:bg-slate-950">
+      <header className="fixed z-50 w-full shadow backdrop-blur-xl bg-white/70 dark:bg-slate-950/70">
         <div className="mycontainer">
           <NavBar />
         </div>
