@@ -7,6 +7,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
     tags: ["HTML", "CSS"],
     url: "https://nucleuscwalletcr.netlify.app/",
+    githubURL: "https://github.com/BrandonSGC/Nucleus-Wallet",
   },
   {
     id: 2,
@@ -16,6 +17,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
     tags: ["ReactJS", "SASS"],
     url: "https://cafeteriabgc.netlify.app/",
+    githubURL: "https://github.com/BrandonSGC/react-sass-cafeteria",
   },
   {
     id: 3,
@@ -25,6 +27,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
     tags: ["HTML", "CSS"],
     url: "https://crtiendamuebles.netlify.app/",
+    githubURL: "https://github.com/BrandonSGC/tienda-muebles",
   },
   {
     id: 4,
@@ -34,6 +37,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
     tags: ["HTML", "CSS"],
     url: "https://techprositecr.netlify.app/",
+    githubURL: "https://github.com/BrandonSGC/TechPro-Audifonos",
   },
   {
     id: 5,
@@ -43,6 +47,7 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
     tags: ["HTML", "CSS"],
     url: "https://arquitecturasite.netlify.app/",
+    githubURL: "https://github.com/BrandonSGC/sitio-web-arquitectura",
   },
   {
     id: 6,
@@ -52,5 +57,6 @@ export const projects = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
     tags: ["ReactJS", "Bootstrap"],
     url: "https://heroesappbgc.netlify.app/",
+    githubURL: "https://github.com/BrandonSGC/react-hereos-spa",
   },
 ];

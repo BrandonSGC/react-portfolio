@@ -1,4 +1,4 @@
-import { Link } from "../assets/";
+import { GitHub, Link } from "../assets/";
 
 export const ProjectCard = ({
   imageURL,
@@ -7,6 +7,7 @@ export const ProjectCard = ({
   tags,
   invertOrder,
   url,
+  githubURL,
 }) => {
   return (
     <div className="grid max-w-5xl mx-auto overflow-hidden shadow-lg rounded-xl md:grid-cols-2">
@@ -42,13 +43,23 @@ export const ProjectCard = ({
           ))}
         </ul>
 
-        <a
-          className="inline-block duration-200 hover:scale-105"
-          href={url}
-          target="_blank"
-        >
-          <Link size="6" />
-        </a>
+        <div className="flex items-center gap-4">
+          <a
+            className="inline-block duration-200 hover:scale-105"
+            href={url}
+            target="_blank"
+          >
+            <Link size="6" />
+          </a>
+          <a
+            className="inline-block duration-200 hover:scale-105"
+            href={githubURL}
+            target="_blank"
+          >
+            <GitHub size="5" />
+          </a>
+        </div>
+        
       </div>
     </div>
   );
