@@ -11,3 +11,4 @@ export * from './ProjectsList';
 export * from './ExperienceList';
 export * from './Modal';
 export * from './ContactForm';
+export * from './Alert';
