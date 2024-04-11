@@ -1,11 +1,9 @@
-import { Copy, Letter, Phone } from "../assets";
+import { CopyButton, Letter, Phone } from "../assets";
 import { ContactForm, Heading, Modal, SocialMediaList } from "../components";
-import { useCopyText } from "../hooks/useCopyText";
 import { useModal } from "../hooks/useModal";
 
 export const Footer = () => {
   const { isOpen, toggleModal } = useModal();
-  const { copyToCipboard } = useCopyText();
 
   return (
     <footer id="contact" className="pt-10">
@@ -21,11 +19,8 @@ export const Footer = () => {
               <Letter />
             </div>
             <p className="font-bold">brangmz20@gmail.com</p>
-            <div
-              className="duration-200 cursor-pointer size-5 hover:scale-105"
-              onClick={() => copyToCipboard("brangmz20@gmail.com")}
-            >
-              <Copy />
+            <div className="relative duration-200 cursor-pointer size-5 hover:scale-105">
+              <CopyButton text="brangmz20@gmail.com" />
             </div>
           </div>
 
@@ -34,11 +29,8 @@ export const Footer = () => {
               <Phone />
             </div>
             <p className="font-bold">+506 70428451</p>
-            <div
-              className="duration-200 cursor-pointer size-5 hover:scale-105"
-              onClick={() => copyToCipboard("+506 70428451")}
-            >
-              <Copy />
+            <div className="duration-200 cursor-pointer size-5 hover:scale-105">
+              <CopyButton text="+506 70428451" />
             </div>
           </div>
 
