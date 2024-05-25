@@ -1,4 +1,4 @@
-import { GitHub, Link } from "../assets/";
+import { LinkIcon, GitHubIcon } from "../assets/";
 
 export const ProjectCard = ({
   imageURL,
@@ -43,23 +43,22 @@ export const ProjectCard = ({
           ))}
         </ul>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2">
           <a
             className="inline-block duration-200 hover:scale-105"
             href={url}
             target="_blank"
           >
-            <Link size="6" />
+            <LinkIcon className="size-6 text-slate-500 dark:text-slate-300" />
           </a>
           <a
             className="inline-block duration-200 hover:scale-105"
             href={githubURL}
             target="_blank"
           >
-            <GitHub size="5" />
+            <GitHubIcon  className="size-6"/>
           </a>
         </div>
-        
       </div>
     </div>
   );

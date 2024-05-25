@@ -26,7 +26,11 @@ export const DarkModeButton = () => {
 
   return (
     <button className="duration-200 hover:scale-110" onClick={handleDarkMode}>
-      {darkMode ? <MoonIcon /> : <SunIcon />}
+      {darkMode ? (
+        <MoonIcon className="size-6" />
+      ) : (
+        <SunIcon className="size-6" />
+      )}
     </button>
   );
 };

@@ -1,8 +1,8 @@
-import { GitHub } from "../assets";
+import { GitHubIcon } from "../assets";
 
 export const SocialMediaList = () => {
   return (
-    <div className="flex items-center gap-5">
+    <div className="flex items-center gap-3">
       <a
         className="duration-300 hover:scale-105 hover:cursor-pointer size-8"
         href="https://www.linkedin.com/in/brandon-g%C3%B3mez-064904239/"
@@ -12,11 +12,11 @@ export const SocialMediaList = () => {
       </a>
 
       <a
-        className="duration-300 hover:scale-105 hover:cursor-pointer size-8"
+        className="duration-300 hover:scale-105 hover:cursor-pointer"
         href="https://github.com/BrandonSGC"
         target="_blank"
       >
-        <GitHub />
+        <GitHubIcon className="size-10" />
       </a>
 
       <a

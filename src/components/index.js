@@ -12,3 +12,4 @@ export * from './ExperienceList';
 export * from './Modal';
 export * from './ContactForm';
 export * from './Alert';
+export * from './CopyButton';

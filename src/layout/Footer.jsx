@@ -1,5 +1,5 @@
-import { CopyButton, Letter, Phone } from "../assets";
-import { ContactForm, Heading, Modal, SocialMediaList } from "../components";
+import { LetterIcon, PhoneIcon } from "../assets";
+import { ContactForm, Heading, Modal, SocialMediaList, CopyButton } from "../components";
 import { useModal } from "../hooks/useModal";
 
 export const Footer = () => {
@@ -15,21 +15,17 @@ export const Footer = () => {
       <div className="mycontainer">
         <div className="pb-5 mt-6 space-y-4 text-center">
           <div className="flex items-center justify-center gap-2">
-            <div className="size-6">
-              <Letter />
-            </div>
+            <LetterIcon className="size-6 text-slate-600 dark:text-slate-300" />
             <p className="font-bold">brangmz20@gmail.com</p>
-            <div className="relative duration-200 cursor-pointer size-5 hover:scale-105">
+            <div className="relative duration-200 cursor-pointer hover:scale-105">
               <CopyButton text="brangmz20@gmail.com" />
             </div>
           </div>
 
           <div className="flex items-center justify-center gap-2">
-            <div className="size-6">
-              <Phone />
-            </div>
+            <PhoneIcon className="size-6 text-slate-600 dark:text-slate-300" />
             <p className="font-bold">+506 70428451</p>
-            <div className="duration-200 cursor-pointer size-5 hover:scale-105">
+            <div className="duration-200 cursor-pointer hover:scale-105">
               <CopyButton text="+506 70428451" />
             </div>
           </div>

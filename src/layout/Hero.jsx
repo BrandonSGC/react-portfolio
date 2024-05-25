@@ -1,4 +1,4 @@
-import { Location } from "../assets";
+import { AvailableIcon, LocationIcon } from "../assets";
 import { SocialMediaList } from "../components";
 
 export const Hero = () => {
@@ -20,13 +20,11 @@ export const Hero = () => {
 
         <div>
           <div className="flex items-center gap-2">
-            <div className="size-5">
-              <Location />
-            </div>
+            <LocationIcon className="text-slate-500 dark:text-slate-200 size-5" />
             <p>San José, Costa Rica</p>
           </div>
           <div className="flex items-center gap-2">
-            <div className="bg-green-500 rounded-full size-4"></div>
+            <AvailableIcon className="text-green-600 dark:text-green-400 size-5" />
             <p>Available for new projects</p>
           </div>
         </div>

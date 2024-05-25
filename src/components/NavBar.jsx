@@ -1,10 +1,9 @@
 import { useState } from "react";
-
+import { CloseIcon, HamburgerMenuIcon } from "../assets";
 import { DarkModeButton } from "./";
-import { CloseIcon, HamburguerMenu } from "../assets";
 
 export const NavBar = () => {
-  const [showMenu, setShowMenu] = useState(false); // Navigation
+  const [showMenu, setShowMenu] = useState(false);
 
   const links = [
     { id: 1, title: "Home", target: "home" },
@@ -24,7 +23,7 @@ export const NavBar = () => {
     const targetElement = document.getElementById(targetId);
     if (targetElement) {
       targetElement.scrollIntoView({ behavior: "smooth" });
-      setShowMenu(false); // Close the navbar menu after clicking on a link
+      setShowMenu(false);
     }
   };
 
@@ -43,12 +42,12 @@ export const NavBar = () => {
       >
         <header className="flex items-center justify-between pb-4 border-b border-slate-500 md:hidden">
           <h1 className="text-2xl font-semibold">{"<BGC />"}</h1>
-          <button className="size-5" onClick={handleNavBar}>
-            <CloseIcon />
+          <button onClick={handleNavBar}>
+            <CloseIcon className="size-6 text-slate-600 dark:text-slate-300" />
           </button>
         </header>
 
-        <ul className="flex flex-col gap-2 py-4 border-b md:py-0 md:flex-row md:border-0">
+        <ul className="flex flex-col gap-2 py-4 border-b border-b-slate-500 md:py-0 md:flex-row md:border-0">
           {links?.map((link) => (
             <li key={link.id}>
               <a
@@ -77,8 +76,8 @@ export const NavBar = () => {
       </nav>
 
       <div className="items-center gap-4 md:flex">
-        <button className="md:hidden size-6" onClick={handleNavBar}>
-          <HamburguerMenu />
+        <button className="md:hidden" onClick={handleNavBar}>
+          <HamburgerMenuIcon className="size-6" />
         </button>
         <div className="hidden md:block size-6">
           <DarkModeButton />
