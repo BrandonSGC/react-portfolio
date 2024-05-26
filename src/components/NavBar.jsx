@@ -66,12 +66,14 @@ export const NavBar = () => {
             <p className="font-light ">Switch Theme</p>
             <DarkModeButton />
           </div>
-          <button
+          <a
             className="w-full p-2 font-medium bg-white shadow-sm rounded-xl dark:hover:bg-slate-200 dark:text-slate-950"
             onClick={handleNavBar}
+            href="/Resume.pdf"
+            download="Resume.pdf"
           >
             Download CV
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -82,12 +84,14 @@ export const NavBar = () => {
         <div className="hidden md:block size-6">
           <DarkModeButton />
         </div>
-        <button
-          className="hidden px-4 py-1 font-medium duration-200 bg-white shadow-sm md:block rounded-xl hover:bg-slate-300 dark:hover:bg-slate-200 dark:text-slate-950"
+        <a
+          className="hidden px-4 py-1 font-medium duration-200 bg-white shadow-lg md:block rounded-xl hover:bg-slate-300 dark:hover:bg-slate-200 dark:text-slate-950"
           onClick={handleNavBar}
+          href="/Resume.pdf"
+          download="Resume.pdf"
         >
           Download CV
-        </button>
+        </a>
       </div>
     </div>
   );
