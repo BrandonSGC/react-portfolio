@@ -1,40 +1,42 @@
 import { AvailableIcon, LocationIcon } from "../assets";
-import { SocialMediaList } from "../components";
+import { Container, SocialMediaList } from "../components";
 
 export const Hero = () => {
   return (
-    <div className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
-      <div className="space-y-6 lg:col-start-1 lg:col-end-3">
-        <h2 className="text-3xl font-bold md:text-6xl">
-          Hi, I'm Brandon{" "}
-          <span className="inline-block animate-wiggle-more animate-infinite">
-            👋
-          </span>
-        </h2>
-        <p className="text-balance">
-          I'm a full-stack web developer (React.js & Node.js) with a focus on
-          creating beautiful, responsive, fast and accessible websites. I've
-          been loving programming since I started, so let's bring your digital
-          vision to life!
-        </p>
+    <section id="home" className="pt-20 pb-20 md:pt-44">
+      <Container className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
+        <div className="space-y-6 lg:col-start-1 lg:col-end-3">
+          <h2 className="text-3xl font-bold md:text-6xl">
+            Hi, I'm Brandon{" "}
+            <span className="inline-block animate-wiggle-more animate-infinite">
+              👋
+            </span>
+          </h2>
+          <p className="text-balance">
+            I'm a full-stack web developer (React.js & Node.js) with a focus on
+            creating beautiful, responsive, fast and accessible websites. I've
+            been loving programming since I started, so let's bring your digital
+            vision to life!
+          </p>
 
-        <div>
-          <div className="flex items-center gap-2">
-            <LocationIcon className="text-slate-500 dark:text-slate-200 size-5" />
-            <p>San José, Costa Rica</p>
+          <div>
+            <div className="flex items-center gap-2">
+              <LocationIcon className="text-slate-500 dark:text-slate-200 size-5" />
+              <p>San José, Costa Rica</p>
+            </div>
+            <div className="flex items-center gap-2">
+              <AvailableIcon className="text-green-600 dark:text-green-400 size-5" />
+              <p>Available for new projects</p>
+            </div>
           </div>
-          <div className="flex items-center gap-2">
-            <AvailableIcon className="text-green-600 dark:text-green-400 size-5" />
-            <p>Available for new projects</p>
-          </div>
+
+          <SocialMediaList />
         </div>
 
-        <SocialMediaList />
-      </div>
-
-      <div>
-        <img src="/img/programmer.svg" alt="Me" />
-      </div>
-    </div>
+        <div>
+          <img src="/img/programmer.svg" alt="Me" />
+        </div>
+      </Container>
+    </section>
   );
 };

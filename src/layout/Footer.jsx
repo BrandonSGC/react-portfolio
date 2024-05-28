@@ -1,5 +1,12 @@
 import { LetterIcon, PhoneIcon } from "../assets";
-import { ContactForm, Heading, Modal, SocialMediaList, CopyButton } from "../components";
+import {
+  ContactForm,
+  Heading,
+  Modal,
+  SocialMediaList,
+  CopyButton,
+  Container,
+} from "../components";
 import { useModal } from "../hooks/useModal";
 
 export const Footer = () => {
@@ -12,7 +19,7 @@ export const Footer = () => {
         subtitle="Feel free to reach out to me if you're looking for a developer or simply want to connect."
       />
 
-      <div className="mycontainer">
+      <Container>
         <div className="pb-5 mt-6 space-y-4 text-center">
           <div className="flex items-center justify-center gap-2">
             <LetterIcon className="size-6 text-slate-600 dark:text-slate-300" />
@@ -44,7 +51,8 @@ export const Footer = () => {
             <SocialMediaList />
           </div>
         </div>
-      </div>
+      </Container>
+      
       <div className="bg-slate-200 dark:bg-slate-900">
         <p className="py-5 text-sm font-light text-center">
           <span className="pr-3 mr-2 border-r border-slate-400 dark:border-slate-300">
