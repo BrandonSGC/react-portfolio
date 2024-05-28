@@ -1,6 +1,4 @@
-import { skills } from "../data";
-
-export const SkillsList = () => {
+export const SkillsList = ({ skills = [] }) => {
   return (
     <div className="flex flex-wrap justify-center gap-4 mt-10">
       {skills?.map((skill) => (
