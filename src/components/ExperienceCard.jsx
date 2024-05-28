@@ -7,32 +7,25 @@ export const ExperienceCard = ({
   finishDate,
   jobTitle,
   time,
-  responsabilities = [],
+  description,
 }) => {
   return (
-    <div className="max-w-[800px] grid-cols-3 md:gap-6 p-6 shadow-lg rounded-xl bg-slate-200 dark:bg-slate-800 flex flex-col gap-4 md:grid">
-      <div className="flex items-center justify-center">
+    <div className="flex flex-col gap-5 p-6 shadow-lg max-w-[400px] rounded-xl bg-slate-200 dark:bg-slate-800">
+      <div className="flex flex-col items-center justify-center gap-1 font-light">
         <img
-          className="block mx-auto max-w-[150px]"
+          className="block mx-auto max-w-[150px] max-h-[30px]"
           src={logoURL}
           alt={companyName}
         />
-      </div>
-
-      <div className="flex flex-col items-center justify-center">
-        <p className="font-light">{time}</p>
-        <p className="flex flex-col col-start-3 col-end-4 font-light text-slate-700 dark:text-white md:flex-row md:items-center md:justify-center">
+        <p>{time}</p>
+        <p className="text-slate-700 dark:text-white">
           {startDate} - {finishDate}
         </p>
       </div>
 
-      <div className="col-start-2 col-end-3 row-start-1 row-end-2">
-        <h3 className="mb-2 text-xl font-bold text-center">{jobTitle}</h3>
-        <ul className="pl-6 list-disc text-slate-600 dark:text-slate-300">
-          {responsabilities?.map((responsability) => (
-            <li key={v4()}>{responsability}</li>
-          ))}
-        </ul>
+      <div className="text-slate-600 dark:text-slate-300">
+        <h3 className="mb-2 text-xl font-semibold text-center">{jobTitle}</h3>
+        <p className="text-center ">{description}</p>
       </div>
     </div>
   );

@@ -3,10 +3,6 @@
 @tailwind utilities;
 
 @layer utilities {
-  .active {
-
-  }
-
   .mycontainer {
     width: 95%;
     max-width: 1200px;
@@ -17,5 +13,21 @@
     .mycontainer {
       width: 85%;
     }
+  }
+
+  /* Scrollbar styles */
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .scrollbar::-webkit-scrollbar-track {
+    background: #7e7e7e;
+    border-radius: 10px;
+  }
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #b6b6b6;
+    border-radius: 10px;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #a3a3a3;
   }
 }
