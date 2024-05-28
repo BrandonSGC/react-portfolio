@@ -10,3 +10,4 @@ export * from './PhoneIcon';
 export * from './LetterIcon';
 export * from './CopyIcon';
 export * from './CheckIcon';
+export * from './ExpressIcon';
