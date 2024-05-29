@@ -27,7 +27,7 @@ export const projects = [
   },
   {
     id: 2,
-    images: ["heroes.png"],
+    images: ["heroes.png", "heroes-2.png", "heroes-3.png"],
     name: "Heroes App",
     description:
       "Project built with React.js and Bootstrap. Explore and search for your favorite Marvel and DC heroes effortlessly. Through this project, I mastered React Router DOM, Hooks, Bootstrap, private routes and more. This app is part of Fernando Herrera's ReactJS course",
@@ -43,7 +43,13 @@ export const projects = [
   },
   {
     id: 3,
-    images: ["nucleus.png"],
+    images: [
+      "nucleus.png",
+      "nucleus-2.png",
+      "nucleus-3.png",
+      "nucleus-4.png",
+      "nucleus-5.png",
+    ],
     name: "Nucleus Wallet",
     description:
       "Nucleus Wallet, a beautiful and stylish landing page created with HTML and CSS. Developed through the Juan Pablo de la Torre Course on Udemy, this project showcases beautiful, responsive design techniques learned throughout the course.",
@@ -53,11 +59,18 @@ export const projects = [
   },
   {
     id: 4,
-    images: ["cafeteria.png"],
+    images: [
+      "cafeteria.png",
+      "cafeteria-2.png",
+      "cafeteria-3.png",
+      "cafeteria-4.png",
+      "cafeteria-5.png",
+      "cafeteria-6.png",
+    ],
     name: "La Cafetería",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
-    tags: ["ReactJS", "SASS", "Responsive Design"],
+      'This project is a responsive website built with React and styled using SASS. This project highlights the advantages of using a CSS preprocessor, such as improved styling efficiency and maintainability. "La Cafetería" demonstrates my skills in modern web development, offering a visually appealing and fully functional user experience.',
+    tags: ["ReactJS", "SASS", "Responsive Design", "react-router-dom"],
     url: "https://cafeteriabgc.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/react-sass-cafeteria",
   },
@@ -66,7 +79,7 @@ export const projects = [
     images: ["tienda-muebles.png"],
     name: "Tienda Muebles",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
+      'As part of the Juan Pablo de la Torre course on Udemy, I developed "Tienda Muebles," a website built with vanilla HTML and CSS. This project allowed me to deepen my understanding of fundamental web styling techniques. "Tienda Muebles" showcases my ability to create a clean, visually appealing, and fully functional website using basic web technologies.',
     tags: ["HTML", "CSS", "Responsive Design"],
     url: "https://crtiendamuebles.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/tienda-muebles",
@@ -76,7 +89,7 @@ export const projects = [
     images: ["techpro.png"],
     name: "Tech Pro",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
+      'During my journey through the Juan Pablo de la Torre course on Udemy, I crafted "Tech Pro," a sleek website crafted solely with HTML and CSS. This project served as a platform for honing my skills in web styling techniques. "Tech Pro" embodies my proficiency in creating polished and functional web interfaces using fundamental web technologies',
     tags: ["HTML", "CSS", "Responsive Design"],
     url: "https://techprositecr.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/TechPro-Audifonos",
@@ -86,7 +99,7 @@ export const projects = [
     images: ["arquitectura.png"],
     name: "Arquitectura Bosque",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
+      'As part of the Juan Pablo de la Torre course on Udemy, I conceived "Arquitectura Bosque," a captivating website fashioned with HTML and CSS. This endeavor was instrumental in refining my expertise in web styling principles. "Arquitectura Bosque" epitomizes my knack for crafting engaging and functional web designs using foundational web development tools',
     tags: ["HTML", "CSS", "Responsive Design"],
     url: "https://arquitecturasite.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/sitio-web-arquitectura",
@@ -96,7 +109,7 @@ export const projects = [
     images: ["gifapp.png"],
     name: "GifApp",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
+      "This project served as my entry point into React development, allowing me to understand key concepts and workflows. With Gif App, users can seamlessly browse and discover an array of animated GIFs, showcasing my foundational skills in building interactive and data-driven web applications using React.",
     tags: ["ReactJS", "CSS", "Responsive Design"],
     url: "https://gifappbgc.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/React-Gif-App.git",
@@ -106,43 +119,23 @@ export const projects = [
     images: ["buscador-autos.png"],
     name: "Buscador de Autos",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
-    tags: ["HTML", "CSS", "Javasctip"],
-    url: "https://buscador-autos-bgc.netlify.app/",
-    githubURL: "https://github.com/BrandonSGC/Buscador-Autos",
-  },
-  {
-    id: 10,
-    images: [".png"],
-    name: "Peliculas",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
-    tags: ["ReactJS", "CSS", "NodeJS", "ExpressJS", "Sequelize", "MySQL"],
-    url: "https://buscador-autos-bgc.netlify.app/",
-    githubURL: "https://github.com/BrandonSGC/Buscador-Autos",
-  },
-  {
-    id: 11,
-    images: [".png"],
-    name: "React Veterinaria",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
-    tags: ["ReactJS", "CSS"],
+      "This project stands as a testament to my mastery of DOM manipulation and a comprehensive understanding of the JavaScript programming language. This project provided a hands-on opportunity to delve into the intricacies of JavaScript, equipping me with the skills to create dynamic and interactive web applications.",
+    tags: ["HTML", "CSS", "JavaScript"],
     url: "https://buscador-autos-bgc.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/Buscador-Autos",
   },
   {
     id: 12,
     images: ["calculadora-propinas-consumo.png"],
-    name: "Calculadora Propinas y Consumo.png",
+    name: "Calculadora Propinas y Consumo",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
+      "From mastering hooks and components to implementing local storage and event handling, this project served as a comprehensive exploration of React's capabilities. This project seamlessly integrates CRUD operations and dynamic event management, showcasing my proficiency in building robust and user-friendly web applications with ReactJS.",
     tags: [
       "React",
       "TailwindCSS",
       "TypeScript",
       "NodeJS",
-      "Express",
+      "ExpressJS",
       "Sequelize",
       "PostgreSQL",
     ],
@@ -150,21 +143,11 @@ export const projects = [
     githubURL: "https://github.com/BrandonSGC/calculadora-propinas",
   },
   {
-    id: 13,
-    images: [".png"],
-    name: "Gestor de Activos",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti, eum. Omnis, sapiente? Porro pariatur est repellat error possimus ea dolore sint. Porro, quibusdam! Cumque facilis impedit reiciendis dicta accusamus consequatur",
-    tags: ["HTML", "CSS", "JavaScript"],
-    url: "https://buscador-autos-bgc.netlify.app/",
-    githubURL: "https://github.com/BrandonSGC/Buscador-Autos",
-  },
-  {
     id: 14,
     images: ["travello.png"],
     name: "Travello",
     description:
-      "Travel, enjoy and live a new and full life. Built Wicket longer admire do barton vanity itself do in it. Preferred to sportsmen it engrossed listening. Park gate sell they west hard for the.",
+      'Diving deep into the realm of React and Tailwind CSS, I embarked on the creation of "Travello," a web clone designed to sharpen my skills in both frontend development and modern styling techniques. Through this project, I delved into the intricacies of building responsive and visually stunning user interfaces using Tailwind CSS',
     tags: ["ReactJS", "TailwindCSS", "Responsive Design"],
     url: "https://buscador-autos-bgc.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/travello",

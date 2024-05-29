@@ -36,7 +36,7 @@ export const Carousel = ({
   return (
     <div className="relative flex flex-col gap-2">
       <img
-        className="duration-200 rounded-xl"
+        className="duration-200 rounded-xl hover:scale-105"
         src={`/img/${images[selectedIndex]}`}
         alt="Carousel Image"
       />
