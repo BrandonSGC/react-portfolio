@@ -30,7 +30,7 @@ export const NavBar = () => {
   return (
     <div className="flex items-center justify-between py-4">
       <a onClick={(e) => handleNavLinkClick(e, "home")} href="">
-        <h1 className="text-3xl font-bold text-blue-400 dark:text-blue-300">
+        <h1 className="text-3xl font-bold text-blue-400 md:text-3xl dark:text-blue-300">
           {"<BGC />"}
         </h1>
       </a>
@@ -47,7 +47,7 @@ export const NavBar = () => {
           </button>
         </header>
 
-        <ul className="flex flex-col gap-2 py-4 border-b border-b-slate-500 md:py-0 md:flex-row md:border-0">
+        <ul className="flex flex-col gap-2 py-4 border-b md:gap-0 border-b-slate-500 md:py-0 md:flex-row md:border-0">
           {links?.map((link) => (
             <li key={link.id}>
               <a
@@ -77,7 +77,7 @@ export const NavBar = () => {
         </div>
       </nav>
 
-      <div className="items-center gap-4 md:flex">
+      <div className="items-center gap-2 md:flex">
         <button className="md:hidden" onClick={handleNavBar}>
           <HamburgerMenuIcon className="size-6" />
         </button>
@@ -85,7 +85,7 @@ export const NavBar = () => {
           <DarkModeButton />
         </div>
         <a
-          className="hidden px-4 py-1 font-medium duration-200 bg-white shadow-lg md:block rounded-xl hover:bg-slate-300 dark:hover:bg-slate-200 dark:text-slate-950"
+          className="hidden px-3 py-1 font-medium duration-200 bg-white shadow-lg md:block rounded-xl hover:bg-slate-300 dark:hover:bg-slate-200 dark:text-slate-950"
           onClick={handleNavBar}
           href="/Resume.pdf"
           download="Resume.pdf"

@@ -40,7 +40,7 @@ export const Hero = () => {
           <SocialMediaList />
         </div>
 
-        <div>
+        <div className="grid place-items-center">
           <img src="/img/programmer.svg" alt="Me" />
         </div>
       </Container>
