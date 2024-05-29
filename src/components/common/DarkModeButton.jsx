@@ -1,6 +1,6 @@
 import { useContext, useEffect } from "react";
-import { MoonIcon, SunIcon } from "../assets";
-import { DarkModeContext } from "../context/DarkModeContext";
+import { MoonIcon, SunIcon } from "../../assets";
+import { DarkModeContext } from "../../context/DarkModeContext";
 
 export const DarkModeButton = () => {
   const { darkMode, setDarkMode } = useContext(DarkModeContext);

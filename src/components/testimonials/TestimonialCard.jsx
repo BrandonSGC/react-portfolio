@@ -1,4 +1,4 @@
-import quotes from "../assets/quotes.svg";
+import quotes from "../../assets/quotes.svg";
 
 export const TestimonialCard = ({ name, comment, jobPosition }) => {
   return (

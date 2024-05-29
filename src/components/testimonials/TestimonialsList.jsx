@@ -1,4 +1,4 @@
-import { TestimonialCard } from "./";
+import { TestimonialCard } from "..";
 
 export const TestimonialsList = ({ testimonials }) => {
   return (

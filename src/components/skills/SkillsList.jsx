@@ -1,4 +1,4 @@
-import { ExpressIcon, GitHubIcon } from "../assets";
+import { ExpressIcon, GitHubIcon } from "../../assets";
 
 const customIcons = {
   Express: ExpressIcon,

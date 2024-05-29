@@ -1,5 +1,5 @@
-import { LinkIcon, GitHubIcon } from "../assets/";
-import { Carousel } from "./Carousel";
+import { LinkIcon, GitHubIcon } from "../../assets";
+import { Carousel } from "../common/Carousel";
 
 export const ProjectCard = ({
   images,

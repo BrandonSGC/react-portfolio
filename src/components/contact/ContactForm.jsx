@@ -1,7 +1,7 @@
-import { useForm } from "../hooks/useForm";
-import { sendContactData } from "../helpers/";
-import { Alert } from "./";
-import { useAlert } from "../hooks/useAlert";
+import { useForm } from "../../hooks/useForm";
+import { sendContactData } from "../../helpers";
+import { Alert } from "..";
+import { useAlert } from "../../hooks/useAlert";
 
 export const ContactForm = () => {
   const { formData, onInputChange, onResetForm } = useForm({

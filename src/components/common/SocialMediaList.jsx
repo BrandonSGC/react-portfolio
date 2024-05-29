@@ -1,4 +1,4 @@
-import { GitHubIcon } from "../assets";
+import { GitHubIcon } from "../../assets";
 
 export const SocialMediaList = () => {
   return (

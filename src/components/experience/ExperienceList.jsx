@@ -1,4 +1,4 @@
-import { ExperienceCard } from "./";
+import { ExperienceCard } from "..";
 
 export const ExperienceList = ({ experiences }) => {
   return (

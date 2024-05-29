@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { CheckIcon, CopyIcon } from "../assets/";
+import { CheckIcon, CopyIcon } from "../../assets";
 
 export const CopyButton = ({ text }) => {
   const [isCopied, setIsCopied] = useState(false);

@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { CloseIcon, HamburgerMenuIcon } from "../assets";
-import { DarkModeButton } from "./";
+import { CloseIcon, HamburgerMenuIcon } from "../../assets";
+import { DarkModeButton } from "..";
 
 export const NavBar = () => {
   const [showMenu, setShowMenu] = useState(false);
