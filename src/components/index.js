@@ -14,3 +14,4 @@ export * from './ContactForm';
 export * from './Alert';
 export * from './CopyButton';
 export * from './Container';
+export * from './Carousel';

@@ -1,7 +1,8 @@
 import { LinkIcon, GitHubIcon } from "../assets/";
+import { Carousel } from "./Carousel";
 
 export const ProjectCard = ({
-  imageURL,
+  images,
   name,
   description,
   tags,
@@ -18,11 +19,7 @@ export const ProjectCard = ({
         href={url}
         target="_blank"
       >
-        <img
-          className="duration-300 rounded-xl hover:scale-105"
-          src={imageURL}
-          alt={name}
-        />
+        <Carousel images={images} autoPlay/>
       </a>
 
       <div
@@ -56,7 +53,7 @@ export const ProjectCard = ({
             href={githubURL}
             target="_blank"
           >
-            <GitHubIcon  className="size-6"/>
+            <GitHubIcon className="size-6" />
           </a>
         </div>
       </div>
