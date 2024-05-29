@@ -13,10 +13,17 @@ export const Hero = () => {
             </span>
           </h2>
           <p className="text-balance">
-            I'm a full-stack web developer (React.js & Node.js) with a focus on
-            creating beautiful, responsive, fast and accessible websites. I've
-            been loving programming since I started, so let's bring your digital
-            vision to life!
+            I'm a full-stack web developer (
+            <span className="font-medium text-blue-400 dark:text-blue-300">
+              React.js
+            </span>{" "}
+            &{" "}
+            <span className="font-medium text-green-500 dark:text-green-600">
+              Node.js
+            </span>{" "}
+            ) with a focus on creating beautiful, responsive, fast and
+            accessible websites. I've been loving programming since I started,
+            so let's bring your digital vision to life!
           </p>
 
           <div>
