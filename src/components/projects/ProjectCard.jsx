@@ -11,7 +11,7 @@ export const ProjectCard = ({
   githubURL,
 }) => {
   return (
-    <div className="grid max-w-5xl mx-auto overflow-hidden shadow-lg rounded-xl md:grid-cols-2">
+    <div className="grid mx-auto overflow-hidden shadow-lg rounded-xl md:grid-cols-2">
       <a
         className={`flex items-center justify-center p-8 bg-slate-200 dark:bg-slate-600 ${
           invertOrder && "md:col-start-2 md:col-end-3"

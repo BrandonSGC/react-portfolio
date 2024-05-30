@@ -7,7 +7,7 @@ export const Testimonials = () => {
       <Container>
         <Heading
           title="Testimonials"
-          subtitle="Nice things people have said about me:"
+          subtitle="Nice things people have said about me"
         />
         <TestimonialsList testimonials={testimonials} />
       </Container>

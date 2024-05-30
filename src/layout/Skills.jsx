@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Container, Heading, SkillsList } from "../components";
 import { skills } from "../data";
 
