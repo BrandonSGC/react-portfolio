@@ -85,7 +85,7 @@ export const NavBar = () => {
           <DarkModeButton />
         </div>
         <a
-          className="hidden px-3 py-1 font-medium duration-200 bg-white shadow-lg md:block rounded-xl hover:bg-slate-300 dark:hover:bg-slate-200 dark:text-slate-950"
+          className="hidden px-3 py-1 font-medium duration-200 shadow text-slate-800 bg-slate-200 md:block rounded-xl hover:bg-slate-300 "
           onClick={handleNavBar}
           href="/Resume.pdf"
           download="Resume.pdf"

@@ -5,7 +5,7 @@ export const Hero = () => {
   return (
     <section id="home" className="pt-20 pb-20 md:pt-44">
       <Container className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
-        <div className="space-y-6 lg:col-start-1 lg:col-end-3">
+        <div className="space-y-6 lg:col-start-1 lg:col-end-3 animate-fade-up animate-once md:animate-fade-right">
           <h2 className="text-3xl font-bold md:text-6xl">
             Hi, I'm Brandon{" "}
             <span className="inline-block animate-wiggle-more animate-infinite">
@@ -40,7 +40,7 @@ export const Hero = () => {
           <SocialMediaList />
         </div>
 
-        <div className="grid place-items-center">
+        <div className="grid place-items-center animate-fade-up animate-once md:animate-fade-left">
           <img src="/img/programmer.svg" alt="Me" />
         </div>
       </Container>
