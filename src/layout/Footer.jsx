@@ -16,7 +16,7 @@ export const Footer = () => {
     <footer id="contact" className="pt-10">
       <Heading
         title="Get in touch"
-        subtitle="Feel free to reach out to me if you're looking for a developer or simply want to connect."
+        subtitle="Feel free to reach out to me if you're looking for a developer or simply want to connect"
       />
 
       <Container>
@@ -46,7 +46,7 @@ export const Footer = () => {
 
           <div className="flex flex-col items-center gap-1">
             <p className="mb-2 font-light">
-              You may also find me in these platforms!
+              You can also find me in these platforms!
             </p>
             <SocialMediaList />
           </div>

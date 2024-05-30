@@ -7,7 +7,7 @@ export const Projects = () => {
       <Container>
         <Heading
           title="Projects"
-          subtitle="Some of the noteworthy projects I have built:"
+          subtitle="Some of the noteworthy projects I have built"
         />
         <ProjectsList projects={projects} />
       </Container>
