@@ -40,7 +40,7 @@ export const projects = [
       "Hooks",
       "Private Routes",
     ],
-    url: "https://heroesappbgc.netlify.app/",
+    url: "https://react-hereos-spa.vercel.app",
     githubURL: "https://github.com/BrandonSGC/react-hereos-spa",
   },
   {
