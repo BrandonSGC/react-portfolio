@@ -9,7 +9,7 @@ export const Hero = () => {
           <h2 className="text-3xl font-bold md:text-6xl">
             Hi, I'm Brandon{" "}
             <span className="inline-block animate-wiggle-more animate-infinite">
-              👋
+              👋🏼
             </span>
           </h2>
           <p className="text-balance">

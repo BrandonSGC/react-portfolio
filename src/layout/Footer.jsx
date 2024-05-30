@@ -52,7 +52,7 @@ export const Footer = () => {
           </div>
         </div>
       </Container>
-      
+
       <div className="bg-slate-200 dark:bg-slate-900">
         <p className="py-5 text-sm font-light text-center">
           <span className="pr-3 mr-2 border-r border-slate-400 dark:border-slate-300">
@@ -67,7 +67,7 @@ export const Footer = () => {
             Brandon Gomez Carvajal
           </a>
           <span className="inline-block ml-1 animate-wiggle-more animate-infinite">
-            👋
+            👋🏼
           </span>
         </p>
       </div>
