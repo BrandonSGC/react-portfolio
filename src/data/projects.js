@@ -23,7 +23,7 @@ export const projects = [
       "Responsive Design",
       "Authentication",
     ],
-    url: "https://react-quizzapp-6qjzi5v1u-brandons-projects-50f97e8f.vercel.app/",
+    url: "https://react-quizzapp.vercel.app/",
     githubURL: "https://github.com/BrandonSGC/react-quizzapp",
   },
   {
