@@ -51,7 +51,7 @@ export const projects = [
       'Diving deep into the realm of React and Tailwind CSS, I embarked on the creation of "Travello," a web clone designed to sharpen my skills in both frontend development and modern styling techniques. Through this project, I delved into the intricacies of building responsive and visually stunning user interfaces using Tailwind CSS',
     categories: ["Frontend"],
     tags: ["ReactJS", "TailwindCSS", "Responsive Design"],
-    url: "https://buscador-autos-bgc.netlify.app/",
+    url: "https://travello-jet.vercel.app/",
     githubURL: "https://github.com/BrandonSGC/travello",
   },
   {

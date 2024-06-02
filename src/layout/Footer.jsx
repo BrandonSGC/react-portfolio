@@ -37,12 +37,12 @@ export const Footer = () => {
             </div>
           </div>
 
-          <button
+          {/* <button
             className="px-3 py-1 font-medium text-white rounded-lg bg-slate-500 hover:bg-slate-600 dark:bg-white dark:hover:bg-slate-200 dark:text-slate-700"
             onClick={toggleModal}
           >
             Open Contact Form
-          </button>
+          </button> */}
 
           <div className="flex flex-col items-center gap-1">
             <p className="mb-2 font-light">

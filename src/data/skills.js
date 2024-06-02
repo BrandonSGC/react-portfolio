@@ -30,12 +30,12 @@ export const skills = [
     iconURL: "/icons/javascript.svg",
     categories: ["Frontend", "Backend"],
   },
-  {
-    id: 6,
-    name: "TypeScript",
-    iconURL: "/icons/typescript.svg",
-    categories: ["Frontend", "Backend"],
-  },
+  // {
+  //   id: 6,
+  //   name: "TypeScript",
+  //   iconURL: "/icons/typescript.svg",
+  //   categories: ["Frontend", "Backend"],
+  // },
   {
     id: 7,
     name: "SASS",
