@@ -26,23 +26,7 @@ export const projects = [
     url: "https://react-quizzapp.vercel.app/",
     githubURL: "https://github.com/BrandonSGC/react-quizzapp",
   },
-  {
-    id: 2,
-    images: ["heroes.png", "heroes-2.png", "heroes-3.png"],
-    name: "Heroes App",
-    description:
-      "Project built with React.js and Bootstrap. Explore and search for your favorite Marvel and DC heroes effortlessly. Through this project, I mastered React Router DOM, Hooks, Bootstrap, private routes and more. This app is part of Fernando Herrera's ReactJS course",
-    categories: ["Frontend"],
-    tags: [
-      "ReactJS",
-      "Bootstrap",
-      "react-router-dom",
-      "Hooks",
-      "Private Routes",
-    ],
-    url: "https://react-hereos-spa.vercel.app",
-    githubURL: "https://github.com/BrandonSGC/react-hereos-spa",
-  },
+
   {
     id: 14,
     images: ["travello.png"],
@@ -73,6 +57,40 @@ export const projects = [
     githubURL: "https://github.com/BrandonSGC/react-sass-cafeteria",
   },
   {
+    id: 6,
+    images: ["app-comida.png"],
+    name: "App Comida",
+    description:
+      'During my journey through the Juan Pablo de la Torre course on Udemy, I crafted "App Comida," a landing page created with ReactJS and SASS. This project served as a platform for honing my skills in web styling techniques, learing about the big advantages of using CSS preprocessors such as SASS.',
+    categories: ["Frontend"],
+    tags: [
+      "ReactJS",
+      "SASS",
+      "Responsive Design",
+      "react-router-dom",
+      "mobile-first",
+    ],
+    url: "https://react-delivery-app-mu.vercel.app/",
+    githubURL: "https://github.com/BrandonSGC/react-delivery-app",
+  },
+  {
+    id: 2,
+    images: ["heroes.png", "heroes-2.png", "heroes-3.png"],
+    name: "Heroes App",
+    description:
+      "Project built with React.js and Bootstrap. Explore and search for your favorite Marvel and DC heroes effortlessly. Through this project, I mastered React Router DOM, Hooks, Bootstrap, private routes and more. This app is part of Fernando Herrera's ReactJS course",
+    categories: ["Frontend"],
+    tags: [
+      "ReactJS",
+      "Bootstrap",
+      "react-router-dom",
+      "Hooks",
+      "Private Routes",
+    ],
+    url: "https://react-hereos-spa.vercel.app",
+    githubURL: "https://github.com/BrandonSGC/react-hereos-spa",
+  },
+  {
     id: 3,
     images: [
       "nucleus.png",
@@ -89,7 +107,6 @@ export const projects = [
     url: "https://nucleuscwalletcr.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/Nucleus-Wallet",
   },
-
   {
     id: 5,
     images: ["tienda-muebles.png"],
