@@ -14,7 +14,7 @@ export const AboutMe = () => {
             Do you want to know more about me?
           </h3>
           <p>
-            I'm a junior web developer, deeply passionate about programming,
+            I'm a junior Fullstack Web Developer, deeply passionate about programming,
             specializing in full-stack development with React.js & Node.js. I
             Prioritize user experience, and writing clean, highly performant
             code.
@@ -28,9 +28,7 @@ export const AboutMe = () => {
             >
               Colegio Universitario de Cartago
             </a>{" "}
-            in 2020. Fuelled by an insatiable curiosity and self-determination,
-            I delved into the world of web development. I continue learning and
-            expanding my knowledge to build innovative solutions.
+            in 2020.
           </p>
         </div>
       </Container>

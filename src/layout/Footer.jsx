@@ -13,7 +13,7 @@ export const Footer = () => {
   const { isOpen, toggleModal } = useModal();
 
   return (
-    <footer id="contact" className="pt-10">
+    <footer id="contact" className="pt-10 bg-slate-100 dark:bg-slate-900">
       <Heading
         title="Get in touch"
         subtitle="Feel free to reach out to me if you're looking for a developer or simply want to connect"
@@ -53,7 +53,7 @@ export const Footer = () => {
         </div>
       </Container>
 
-      <div className="bg-slate-200 dark:bg-slate-900">
+      <div className="bg-slate-200 dark:bg-slate-950">
         <p className="py-5 text-sm font-light text-center">
           <span className="pr-3 mr-2 border-r border-slate-400 dark:border-slate-300">
             &copy; 2024

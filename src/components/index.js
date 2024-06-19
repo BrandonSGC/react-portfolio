@@ -15,3 +15,4 @@ export * from "./common/Alert";
 export * from "./common/CopyButton";
 export * from "./common/Container";
 export * from "./common/Carousel";
+export * from "./common/TagsList";

@@ -1,5 +1,6 @@
 import {
   AboutMe,
+  Education,
   Experience,
   Footer,
   Header,
@@ -18,7 +19,6 @@ function App() {
       <Skills />
       <Experience />
       <Projects />
-      <Testimonials />
       <Footer />
     </>
   );

@@ -1,5 +1,6 @@
 import { LinkIcon, GitHubIcon } from "../../assets";
 import { Carousel } from "../common/Carousel";
+import { TagsList } from "../common/TagsList";
 
 export const ProjectCard = ({
   images,
@@ -28,17 +29,8 @@ export const ProjectCard = ({
         }`}
       >
         <h2 className="text-xl font-semibold">{name}</h2>
-        <p className="dark:text-slate-300">{description}</p>
-        <ul className="flex flex-wrap gap-2 text-sm">
-          {tags?.map((tag, i) => (
-            <li
-              className="inline-block px-2 py-1 rounded-xl bg-slate-200 text-slate-600 dark:text-slate-300 dark:bg-slate-600"
-              key={i}
-            >
-              {tag}
-            </li>
-          ))}
-        </ul>
+        <p className="dark:text-slate-200">{description}</p>
+        <TagsList tags={tags}/>
 
         <div className="flex items-center gap-2">
           <a

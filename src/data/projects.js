@@ -11,7 +11,7 @@ export const projects = [
     ],
     name: "QuizzApp",
     description:
-      "Welcome to QuizzApp, the all-in-one quiz app designed to make learning fun and engaging. Play the default quizzes or use your creativity by crafting your own quizzes. Project created with React and Tailwind in the frontend and NodeJs, Express, Sequelize and PostgreSQL in the backend.",
+      "Welcome to QuizzApp, the all-in-one quiz app designed to make learning fun and engaging. Play the default quizzes or use your creativity by crafting your own quizzes. Project created with ReactJS and TailwindCSS in the frontend and NodeJs, Express, Sequelize and PostgreSQL in the backend.",
     categories: ["FullStack"],
     tags: [
       "ReactJS",
@@ -19,24 +19,31 @@ export const projects = [
       "NodeJS",
       "ExpressJS",
       "Sequelize",
-      "PostreSQL",
+      "PostgreSQL",
       "Responsive Design",
       "Authentication",
+      "Dark Theme",
+      "SMTP",
     ],
     url: "https://react-quizzapp.vercel.app/",
     githubURL: "https://github.com/BrandonSGC/react-quizzapp",
   },
-
   {
-    id: 14,
-    images: ["travello.png"],
-    name: "Travello",
+    id: 15,
+    images: ["guitar-la.png"],
+    name: "Guitar LA",
     description:
       'Diving deep into the realm of React and Tailwind CSS, I embarked on the creation of "Travello," a web clone designed to sharpen my skills in both frontend development and modern styling techniques. Through this project, I delved into the intricacies of building responsive and visually stunning user interfaces using Tailwind CSS',
     categories: ["Frontend"],
-    tags: ["ReactJS", "TailwindCSS", "Responsive Design"],
-    url: "https://travello-jet.vercel.app/",
-    githubURL: "https://github.com/BrandonSGC/travello",
+    tags: [
+      "ReactJS",
+      "TailwindCSS",
+      "Responsive Design",
+      "react-router-dom",
+      "react-hook-form",
+    ],
+    url: "https://react-guitar-la.vercel.app/",
+    githubURL: "https://github.com/BrandonSGC/react-guitar-la",
   },
   {
     id: 4,
@@ -55,6 +62,17 @@ export const projects = [
     tags: ["ReactJS", "SASS", "Responsive Design", "react-router-dom"],
     url: "https://cafeteriabgc.netlify.app/",
     githubURL: "https://github.com/BrandonSGC/react-sass-cafeteria",
+  },
+  {
+    id: 14,
+    images: ["travello.png"],
+    name: "Travello",
+    description:
+      'Diving deep into the realm of React and Tailwind CSS, I embarked on the creation of "Travello," a web clone designed to sharpen my skills in both frontend development and modern styling techniques. Through this project, I delved into the intricacies of building responsive and visually stunning user interfaces using Tailwind CSS',
+    categories: ["Frontend"],
+    tags: ["ReactJS", "TailwindCSS", "Responsive Design"],
+    url: "https://travello-jet.vercel.app/",
+    githubURL: "https://github.com/BrandonSGC/travello",
   },
   {
     id: 6,

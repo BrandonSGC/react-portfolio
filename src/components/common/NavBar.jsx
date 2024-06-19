@@ -9,7 +9,7 @@ export const NavBar = () => {
     { id: 1, title: "Home", target: "home" },
     { id: 2, title: "About", target: "about" },
     { id: 3, title: "Projects", target: "projects" },
-    { id: 4, title: "Testimonials", target: "testimonials" },
+    // { id: 4, title: "Testimonials", target: "testimonials" },
     { id: 5, title: "Contact", target: "contact" },
   ];
 
