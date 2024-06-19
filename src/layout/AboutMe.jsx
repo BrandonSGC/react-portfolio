@@ -2,7 +2,7 @@ import { Container, Heading } from "../components";
 
 export const AboutMe = () => {
   return (
-    <section id="about" className="py-10 bg-slate-100 dark:bg-slate-800">
+    <section id="about" className="py-10 bg-slate-100 dark:bg-slate-900">
       <Heading title="About Me" />
       <Container className="flex flex-col grid-cols-2 gap-4 md:grid">
         <div className="flex items-center justify-center p-2">
