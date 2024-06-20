@@ -75,6 +75,25 @@ export const projects = [
     githubURL: "https://github.com/BrandonSGC/travello",
   },
   {
+    id: 17,
+    images: ["calories-tracker.png"],
+    name: "Calories Tracker",
+    description:
+      "This project is one of my first projects using TypeScript, designed to calculate calories consumed and burned throughout the day. The app allows users to log meals and physical activities, and provides a clear, visual summary of calories consumed, burned, and the difference between those two.",
+    categories: ["Frontend"],
+    tags: [
+      "ReactJS",
+      "TypeScript",
+      "TailwindCSS",
+      "Context API",
+      "Reducers",
+      "Custom Hooks",
+      "Responsive Design",
+    ],
+    url: "https://calorie-tracker-theta-fawn.vercel.app/",
+    githubURL: "https://github.com/BrandonSGC/calorie-tracker",
+  },
+  {
     id: 6,
     images: ["app-comida.png"],
     name: "App Comida",
