@@ -45,6 +45,7 @@ export const Hero = () => {
             className="object-cover w-[70%] md:w-auto rounded-[50%] max-w-xs shadow-2xl shadow-slate-300 dark:shadow-slate-900"
             src="/img/me.jpg"
             alt="Me"
+            loading="lazy"
           />
         </div>
       </Container>

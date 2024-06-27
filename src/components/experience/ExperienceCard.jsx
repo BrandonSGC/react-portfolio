@@ -14,6 +14,7 @@ export const ExperienceCard = ({
           className="block mx-auto max-w-[150px] max-h-[30px]"
           src={logoURL}
           alt={companyName}
+          loading="lazy"
         />
         <p>{time}</p>
         <p className="text-slate-700 dark:text-white">

@@ -15,12 +15,13 @@ export const SkillsList = ({ skills = [] }) => {
         return (
           <div className="duration-300 hover:scale-105" key={skill.id}>
             {CustomIcon ? (
-              <CustomIcon className="mx-auto size-20" />
+              <CustomIcon className="mx-auto size-12 md:size-16" />
             ) : (
               <img
-                className="mx-auto size-20"
+                className="mx-auto size-12 md:size-16"
                 src={skill.iconURL}
                 alt={`${skill.name} icon`}
+                loading="lazy"
               />
             )}
             <p className="text-center">{skill.name}</p>

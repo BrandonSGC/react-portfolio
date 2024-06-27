@@ -39,6 +39,7 @@ export const Carousel = ({
         className="duration-200 rounded-xl hover:scale-105"
         src={`/img/${images[selectedIndex]}`}
         alt="Carousel Image"
+        loading="lazy"
       />
 
       {showButtons && (

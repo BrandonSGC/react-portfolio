@@ -26,7 +26,7 @@ export const Skills = () => {
         />
 
         <div className="">
-          <div className="relative flex items-center justify-center gap-2 mt-3">
+          <div className="relative flex items-center justify-center gap-2 mt-5">
             <select
               className="px-3 py-1 border rounded cursor-pointer border-slate-700 bg-slate-200 dark:bg-slate-800 dark:border-slate-200"
               onChange={handleChange}

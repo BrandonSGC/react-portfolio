@@ -9,7 +9,7 @@ export const SocialMediaList = () => {
         target="_blank"
         aria-label="LinkedIn"
       >
-        <img src="/icons/linkedin.svg" alt="LinkedIn icon" />
+        <img src="/icons/linkedin.svg" alt="LinkedIn icon" loading="lazy"/>
       </a>
 
       <a
@@ -28,7 +28,7 @@ export const SocialMediaList = () => {
         rel="noopener noreferrer"
         aria-label="WhatsApp"
       >
-        <img src="/icons/whatsapp.svg" alt="WhatsApp icon" />
+        <img src="/icons/whatsapp.svg" alt="WhatsApp icon" loading="lazy"/>
       </a>
     </div>
   );
