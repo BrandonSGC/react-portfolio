@@ -21,10 +21,11 @@ export const SocialMediaList = () => {
 
       <a
         className="duration-300 hover:scale-105 hover:cursor-pointer size-8"
-        href="tel:+50670428451"
+        href="https://wa.me/50670428451"
         target="_blank"
+        rel="noopener noreferrer"
       >
-        <img src="/icons/whatsapp.svg" alt="icon" />
+        <img src="/icons/whatsapp.svg" alt="WhatsApp icon" />
       </a>
     </div>
   );
