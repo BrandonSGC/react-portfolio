@@ -13,7 +13,7 @@ export const Footer = () => {
   const { isOpen, toggleModal } = useModal();
 
   return (
-    <footer id="contact" className="pt-10 bg-slate-100 dark:bg-slate-900">
+    <footer id="contact" className="pt-10 bg-slate-100 dark:bg-slate-950">
       <Heading
         title="Get in touch"
         subtitle="Feel free to reach out to me if you're looking for a developer or simply want to connect"
@@ -23,7 +23,7 @@ export const Footer = () => {
         <div className="pb-5 mt-6 space-y-4 text-center">
           <div className="flex items-center justify-center gap-2">
             <LetterIcon className="size-6 text-slate-600 dark:text-slate-300" />
-            <p className="font-bold">brangmz20@gmail.com</p>
+            <p className="font-medium">brangmz20@gmail.com</p>
             <div className="relative duration-200 cursor-pointer hover:scale-105">
               <CopyButton text="brangmz20@gmail.com" />
             </div>
@@ -31,7 +31,7 @@ export const Footer = () => {
 
           <div className="flex items-center justify-center gap-2">
             <PhoneIcon className="size-6 text-slate-600 dark:text-slate-300" />
-            <p className="font-bold">+506 70428451</p>
+            <p className="font-medium">+506 70428451</p>
             <div className="duration-200 cursor-pointer hover:scale-105">
               <CopyButton text="+506 70428451" />
             </div>
@@ -53,7 +53,7 @@ export const Footer = () => {
         </div>
       </Container>
 
-      <div className="bg-slate-200 dark:bg-slate-950">
+      <div className="bg-slate-200 dark:bg-slate-900">
         <p className="py-5 text-sm font-light text-center">
           <span className="pr-3 mr-2 border-r border-slate-400 dark:border-slate-300">
             &copy; 2024

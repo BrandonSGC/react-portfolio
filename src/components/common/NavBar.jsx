@@ -7,10 +7,11 @@ export const NavBar = () => {
 
   const links = [
     { id: 1, title: "Home", target: "home" },
-    { id: 2, title: "About", target: "about" },
+    { id: 2, title: "Skills", target: "skills" },
     { id: 3, title: "Projects", target: "projects" },
-    // { id: 4, title: "Testimonials", target: "testimonials" },
-    { id: 5, title: "Contact", target: "contact" },
+    // { id: 4, title: "Education", target: "education" },
+    { id: 5, title: "Experience", target: "experience" },
+    { id: 6, title: "Contact", target: "contact" },
   ];
 
   const handleNavBar = () => {
@@ -30,7 +31,7 @@ export const NavBar = () => {
   return (
     <div className="flex items-center justify-between py-4">
       <a onClick={(e) => handleNavLinkClick(e, "home")} href="">
-        <h1 className="text-3xl font-bold text-blue-400 md:text-3xl dark:text-blue-300">
+        <h1 className="text-3xl font-bold text-transparent bg-gradient-to-r from-blue-400 to-blue-800 bg-clip-text md:text-3xl">
           {"<BGC />"}
         </h1>
       </a>

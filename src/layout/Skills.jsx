@@ -18,7 +18,7 @@ export const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-10">
+    <section id="skills" className="py-10 bg-slate-100 dark:bg-slate-900">
       <Container>
         <Heading
           title="Skills"

@@ -1,24 +1,13 @@
-import {
-  AboutMe,
-  Education,
-  Experience,
-  Footer,
-  Header,
-  Hero,
-  Projects,
-  Skills,
-  Testimonials,
-} from "./layout/";
+import { Experience, Footer, Header, Hero, Projects, Skills } from "./layout/";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <AboutMe />
       <Skills />
-      <Experience />
       <Projects />
+      <Experience />
       <Footer />
     </>
   );

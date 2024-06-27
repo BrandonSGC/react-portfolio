@@ -4,29 +4,30 @@ import { Container, SocialMediaList } from "../components";
 export const Hero = () => {
   return (
     <section id="home" className="pt-20 pb-20 md:pt-44">
-      <Container className="flex flex-col-reverse gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
-        <div className="space-y-6 lg:col-start-1 lg:col-end-3 animate-fade-up animate-once md:animate-fade-right">
-          <h2 className="text-3xl font-bold md:text-6xl">
+      <Container className="flex flex-col-reverse gap-5 md:grid md:grid-cols-[2fr,1fr] lg:gap-0">
+        <div className="space-y-6 animate-fade-up animate-once md:animate-fade-right">
+          <h2 className="text-3xl font-bold text-transparent md:text-6xl bg-gradient-to-r from-slate-600 to-slate-900 dark:from-slate-100 dark:to-slate-400 bg-clip-text">
             Hi, I'm Brandon{" "}
-            <span className="inline-block animate-wiggle-more animate-infinite">
+            <span className="inline-block text-black animate-wiggle-more animate-infinite">
               👋🏼
             </span>
           </h2>
           <p className="text-balance">
-            I'm a full-stack web developer (
-            <span className="font-medium text-blue-400 dark:text-blue-300">
+            I'm a <span className="font-medium">Fullstack Web Developer</span>{" "}
+            specializing in (
+            <span className="font-bold text-blue-400 dark:text-blue-300">
               React.js
             </span>{" "}
             &{" "}
-            <span className="font-medium text-green-500 dark:text-green-600">
+            <span className="font-bold text-green-500 dark:text-green-600">
               Node.js
             </span>{" "}
-            ) with a focus on creating beautiful, responsive, fast and
-            accessible websites. I've been loving programming since I started,
-            so let's bring your digital vision to life!
+            ) with a focus on creating responsive and high-performance websites
+            and web applications. Based in San José, Costa Rica, I'm eager to
+            collaborate on new projects and bring innovative ideas to life.
           </p>
 
-          <div>
+          <div className="">
             <div className="flex items-center gap-2">
               <LocationIcon className="text-slate-500 dark:text-slate-200 size-5" />
               <p>San José, Costa Rica</p>
@@ -36,12 +37,15 @@ export const Hero = () => {
               <p>Available for new projects</p>
             </div>
           </div>
-
           <SocialMediaList />
         </div>
 
-        <div className="grid place-items-center animate-fade-up animate-once md:animate-fade-left">
-          <img src="/img/programmer.svg" alt="Me" />
+        <div className="flex items-center justify-center w-full animate-fade-up animate-once md:animate-fade-left">
+          <img
+            className="object-cover w-[70%] md:w-auto rounded-[50%] max-w-xs shadow-2xl shadow-slate-300 dark:shadow-slate-900"
+            src="/img/me.jpg"
+            alt="Me"
+          />
         </div>
       </Container>
     </section>

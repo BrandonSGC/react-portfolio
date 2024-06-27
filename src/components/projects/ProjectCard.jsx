@@ -12,25 +12,25 @@ export const ProjectCard = ({
   githubURL,
 }) => {
   return (
-    <div className="grid mx-auto overflow-hidden shadow-lg rounded-xl md:grid-cols-2">
+    <div className="grid mx-auto overflow-hidden shadow-lg rounded-xl lg:grid-cols-2">
       <a
         className={`flex items-center justify-center p-8 bg-slate-200 dark:bg-slate-600 ${
-          invertOrder && "md:col-start-2 md:col-end-3"
+          invertOrder && "lg:col-start-2 lg:col-end-3"
         }`}
         href={url}
         target="_blank"
       >
-        <Carousel images={images} autoPlay/>
+        <Carousel images={images} autoPlay />
       </a>
 
       <div
         className={`p-8 space-y-3 bg-slate-100 dark:bg-slate-800 ${
-          invertOrder && "md:col-start-1 md:col-end-2 md:row-start-1"
+          invertOrder && "lg:col-start-1 lg:col-end-2 lg:row-start-1"
         }`}
       >
         <h2 className="text-xl font-semibold">{name}</h2>
         <p className="dark:text-slate-200">{description}</p>
-        <TagsList tags={tags}/>
+        <TagsList tags={tags} />
 
         <div className="flex items-center gap-2">
           <a
