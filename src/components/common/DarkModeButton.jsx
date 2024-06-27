@@ -1,9 +1,8 @@
-import { useContext, useEffect } from "react";
+import { useEffect, useState } from "react";
 import { MoonIcon, SunIcon } from "../../assets";
-import { DarkModeContext } from "../../context/DarkModeContext";
 
 export const DarkModeButton = () => {
-  const { darkMode, setDarkMode } = useContext(DarkModeContext);
+  const [darkMode, setDarkMode] = useState();
 
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
@@ -25,7 +24,11 @@ export const DarkModeButton = () => {
   };
 
   return (
-    <button className="duration-200 hover:scale-110" onClick={handleDarkMode}>
+    <button
+      className="duration-200 hover:scale-110"
+      onClick={handleDarkMode}
+      aria-label="Darkmode button"
+    >
       {darkMode ? (
         <MoonIcon className="size-6" />
       ) : (

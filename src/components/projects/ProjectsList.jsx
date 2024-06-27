@@ -14,7 +14,6 @@ export const ProjectsList = ({ projects }) => {
 
   const paginate = (pageNumber) => setCurrentPage(pageNumber);
 
-  // TODO: Filters by Category, Tags...
   return (
     <div className="grid gap-4 mt-10">
       {currentProjects.map((project, i) => (

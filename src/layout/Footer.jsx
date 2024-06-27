@@ -1,17 +1,7 @@
 import { LetterIcon, PhoneIcon } from "../assets";
-import {
-  ContactForm,
-  Heading,
-  Modal,
-  SocialMediaList,
-  CopyButton,
-  Container,
-} from "../components";
-import { useModal } from "../hooks/useModal";
+import { Heading, SocialMediaList, CopyButton, Container } from "../components";
 
 export const Footer = () => {
-  const { isOpen, toggleModal } = useModal();
-
   return (
     <footer id="contact" className="pt-10 bg-slate-100 dark:bg-slate-950">
       <Heading
@@ -36,13 +26,6 @@ export const Footer = () => {
               <CopyButton text="+506 70428451" />
             </div>
           </div>
-
-          {/* <button
-            className="px-3 py-1 font-medium text-white rounded-lg bg-slate-500 hover:bg-slate-600 dark:bg-white dark:hover:bg-slate-200 dark:text-slate-700"
-            onClick={toggleModal}
-          >
-            Open Contact Form
-          </button> */}
 
           <div className="flex flex-col items-center gap-1">
             <p className="mb-2 font-light">
@@ -71,12 +54,6 @@ export const Footer = () => {
           </span>
         </p>
       </div>
-
-      {isOpen && (
-        <Modal isOpen={isOpen} toggleModal={toggleModal}>
-          <ContactForm />
-        </Modal>
-      )}
     </footer>
   );
 };

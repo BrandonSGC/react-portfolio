@@ -79,7 +79,7 @@ export const NavBar = () => {
       </nav>
 
       <div className="items-center gap-2 md:flex">
-        <button className="md:hidden" onClick={handleNavBar}>
+        <button className="md:hidden" onClick={handleNavBar} aria-label="menu">
           <HamburgerMenuIcon className="size-6" />
         </button>
         <div className="hidden md:block size-6">

@@ -37,6 +37,7 @@ export const ProjectCard = ({
             className="inline-block duration-200 hover:scale-105"
             href={url}
             target="_blank"
+            aria-label={`${name} web`}
           >
             <LinkIcon className="size-6 text-slate-500 dark:text-slate-300" />
           </a>
@@ -44,6 +45,7 @@ export const ProjectCard = ({
             className="inline-block duration-200 hover:scale-105"
             href={githubURL}
             target="_blank"
+            aria-label="Github"
           >
             <GitHubIcon className="size-6" />
           </a>

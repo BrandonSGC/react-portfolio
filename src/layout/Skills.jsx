@@ -30,7 +30,10 @@ export const Skills = () => {
             <select
               className="px-3 py-1 border rounded cursor-pointer border-slate-700 bg-slate-200 dark:bg-slate-800 dark:border-slate-200"
               onChange={handleChange}
+              id="filters"
+              name="filters"
               defaultValue={""}
+              aria-label="Filters"
             >
               <option value="">All Categories</option>
               <option value="Frontend">Frontend</option>
