@@ -2,22 +2,26 @@ import { useEffect, useState } from "react";
 import { MoonIcon, SunIcon } from "../../assets";
 
 export const DarkModeButton = () => {
-  const [darkMode, setDarkMode] = useState();
+  const [darkMode, setDarkMode] = useState(null);
+  console.log(darkMode);
 
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
+
     if (prefersDarkMode) {
       setDarkMode(true);
     }
-  }, [setDarkMode]);
+  }, []);
 
-  if (darkMode) {
-    document.querySelector("html").classList.add("dark");
-  } else {
-    document.querySelector("html").classList.remove("dark");
-  }
+  useEffect(() => {
+    if (darkMode) {
+      document.querySelector("html").classList.add("dark");
+    } else {
+      document.querySelector("html").classList.remove("dark");
+    }
+  }, [darkMode]);
 
   const handleDarkMode = () => {
     setDarkMode(!darkMode);

@@ -9,7 +9,6 @@ export const NavBar = () => {
     { id: 1, title: "Home", target: "home" },
     { id: 2, title: "Skills", target: "skills" },
     { id: 3, title: "Projects", target: "projects" },
-    // { id: 4, title: "Education", target: "education" },
     { id: 5, title: "Experience", target: "experience" },
     { id: 6, title: "Contact", target: "contact" },
   ];
