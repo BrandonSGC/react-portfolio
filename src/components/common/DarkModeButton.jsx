@@ -3,7 +3,6 @@ import { MoonIcon, SunIcon } from "../../assets";
 
 export const DarkModeButton = () => {
   const [darkMode, setDarkMode] = useState(null);
-  console.log(darkMode);
 
   useEffect(() => {
     const prefersDarkMode = window.matchMedia(
