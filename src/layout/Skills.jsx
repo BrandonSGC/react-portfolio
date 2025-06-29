@@ -7,6 +7,7 @@ export const Skills = () => {
 
   const handleChange = (e) => {
     const selectedFilter = e.target.value;
+
     if (selectedFilter === "") {
       setFilteredSkills(skills);
       return;
@@ -36,10 +37,15 @@ export const Skills = () => {
               aria-label="Filters"
             >
               <option value="">All Categories</option>
+              <option value="Cloud">Cloud</option>
               <option value="Frontend">Frontend</option>
               <option value="Backend">Backend</option>
               <option value="Framework">Frameworks</option>
               <option value="Database">Databases</option>
+              <option value="Infrastructure as Code">
+                Infrastructure as Code
+              </option>
+              <option value="Scripting">Scripting</option>
               <option value="ORM">ORM</option>
               <option value="Tool">Tools</option>
             </select>
