@@ -1,4 +1,4 @@
-// Categories: Frontend, Backend, Frameworks, Databases, ORM Tool.
+// Categories
 export const skills = [
   {
     id: 1,
@@ -89,5 +89,41 @@ export const skills = [
     name: "GitHub",
     iconURL: "/icons/github-logo.svg",
     categories: ["Tool"],
+  },
+  {
+    id: 16,
+    name: "Azure",
+    iconURL: "/icons/azure.svg",
+    categories: ["Cloud"],
+  },
+  {
+    id: 17,
+    name: "Terraform",
+    iconURL: "/icons/terraform.svg",
+    categories: ["Cloud", "Infrastructure as Code"],
+  },
+  {
+    id: 18,
+    name: "Bicep",
+    iconURL: "/icons/bicep.svg",
+    categories: ["Cloud", "Infrastructure as Code"],
+  },
+  {
+    id: 19,
+    name: "Python",
+    iconURL: "/icons/python.svg",
+    categories: ["Backend", "Scripting"],
+  },
+  {
+    id: 20,
+    name: "PowerShell",
+    iconURL: "/icons/powershell.svg",
+    categories: ["Scripting", "Tool", "Cloud"],
+  },
+  {
+    id: 21,
+    name: "Bash",
+    iconURL: "/icons/bash.svg",
+    categories: ["Scripting", "Tool", "Cloud"],
   },
 ];
