@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Terraform build files
+.terraform
+.terraform.lock.hcl
+# Terraform state files
+*.tfstate
+*.tfstate.*
