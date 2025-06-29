@@ -13,20 +13,24 @@ export const Hero = () => {
             </span>
           </h2>
           <p className="text-balance">
-            I'm a <span className="font-medium">Fullstack Web Developer</span>{" "}
-            specializing in (
+            I'm a{" "}
             <span className="font-bold text-blue-400 dark:text-blue-300">
-              React.js
+              Cloud Engineer
             </span>{" "}
-            &{" "}
+            with a background in{" "}
             <span className="font-bold text-green-500 dark:text-green-600">
-              Node.js
+              Development
             </span>{" "}
-            ) with a focus on creating responsive and high-performance websites
-            and web applications. Based in San José, Costa Rica, I'm eager to
-            collaborate on new projects and bring innovative ideas to life.
+            and a strong focus on cloud infrastructure, automation, and
+            technical problem-solving. I work daily with scalable, cloud-based
+            systems, gaining hands-on experience that supports my path toward
+            becoming a{" "}
+            <span className="font-bold text-purple-500 dark:text-purple-600">
+              DevOps
+            </span>{" "}
+            Engineer. I'm passionate about continuous learning and building
+            reliable, efficient solutions.
           </p>
-
           <div className="">
             <div className="flex items-center gap-2">
               <LocationIcon className="text-slate-500 dark:text-slate-200 size-5" />
